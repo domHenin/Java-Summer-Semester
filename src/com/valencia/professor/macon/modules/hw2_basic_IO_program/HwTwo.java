@@ -29,6 +29,7 @@ public class HwTwo {
      getNumbers.solveSum();
      getNumbers.solveAverage();
 
+//  SIMPLE WAY:
 //        int num1, num2, num3;
 //        System.out.println("Enter First Number: ");
 //        num1 = scanner.nextInt();
