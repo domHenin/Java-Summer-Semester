@@ -7,7 +7,7 @@ public class HwTwo {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("to the CREATOR all glory and honor!");
+//        System.out.println("to the CREATOR all glory and honor!");
 
 //  CALLING CONSTRUCTOR:
     GetNumbers getNumbers = new GetNumbers();
