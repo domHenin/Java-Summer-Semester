@@ -7,10 +7,10 @@ public class HwTwo {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-//        System.out.println("to the CREATOR all glory and honor!");
+        System.out.println("to the CREATOR all glory and honor!");
 
 //  CALLING CONSTRUCTOR:
-        GetNumbers getNumbers = new GetNumbers();
+    GetNumbers getNumbers = new GetNumbers();
 
 //  REQUESTING INPUT:
         System.out.println("Enter First Number: ");
@@ -23,11 +23,11 @@ public class HwTwo {
         getNumbers.setNum3(scanner.nextInt());
 
 //  OUTPUTTING INPUT:
-        System.out.println("The three numbers are: "+getNumbers.getNum1()+" "+ getNumbers.getNum2()+" "+getNumbers.getNum3());
+    System.out.println("The three numbers are: "+getNumbers.getNum1()+" "+ getNumbers.getNum2()+" "+getNumbers.getNum3());
 
 //  CALLING FUNCTIONS:
-        getNumbers.solveSum();
-        getNumbers.solveAverage();
+     getNumbers.solveSum();
+     getNumbers.solveAverage();
 
 //        int num1, num2, num3;
 //        System.out.println("Enter First Number: ");
