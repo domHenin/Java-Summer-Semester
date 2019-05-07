@@ -9,23 +9,25 @@ public class HwTwo {
     public static void main(String[] args) {
 //        System.out.println("to the CREATOR all glory and honor!");
 
+//  CALLING CONSTRUCTOR:
         GetNumbers getNumbers = new GetNumbers();
 
+//  REQUESTING INPUT:
         System.out.println("Enter First Number: ");
         getNumbers.setNum1(scanner.nextInt());
 
-        System.out.println("Enter Seconds Number: ");
+        System.out.println("Enter Second Number: ");
         getNumbers.setNum2(scanner.nextInt());
 
         System.out.println("Enter Third Number: ");
         getNumbers.setNum3(scanner.nextInt());
 
-        SolveFor solveFor = new SolveFor();
+//  OUTPUTTING INPUT:
+        System.out.println("The three numbers are: "+getNumbers.getNum1()+" "+ getNumbers.getNum2()+" "+getNumbers.getNum3());
 
-        solveFor.getSum();
-        solveFor.getAverage();
-
-
+//  CALLING FUNCTIONS:
+        getNumbers.solveSum();
+        getNumbers.solveAverage();
 
 //        int num1, num2, num3;
 //        System.out.println("Enter First Number: ");
