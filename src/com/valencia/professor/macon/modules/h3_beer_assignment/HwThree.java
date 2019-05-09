@@ -1,3 +1,12 @@
+///////////////////////////////////////////////////////////////////////////////
+//                   ALL STUDENTS COMPLETE THESE SECTIONS
+// Title:            HW3 Beer Assignment
+// Semester:         (cop2800c) Summer 2019
+//
+// Author:           Dominic Heningburg
+// Date:             5/26/2019
+//
+//////////////////// ``````````````````````````````````` ////////////////////
 package com.valencia.professor.macon.modules.h3_beer_assignment;
 
 public class HwThree {
@@ -5,6 +14,9 @@ public class HwThree {
         System.out.println("thank you GOD for who you are in my life!");
     }
 }
+
+// FORMULA: multiply the energy value by 4184
+// FORMULA: beerConsume * 365(year)
 
 //TODO:
 // Outcomes:
