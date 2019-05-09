@@ -9,13 +9,36 @@
 //////////////////// ``````````````````````````````````` ////////////////////
 package com.valencia.professor.macon.modules.h3_beer_assignment;
 
+import java.util.Scanner;
+
 public class HwThree {
+
+    public static final int YEAR = 365;
+    public static final int CALORIE = 150;
+    public static final int OUNCE = 12;
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        System.out.println("thank you GOD for who you are in my life!");
+//        System.out.println("thank you GOD for who you are in my life!");
+        double dailyBeer=0;
+        double paymentBeer=0;
+        double yearlyAns=0;
+        double calorieIntake=0;
+
+        System.out.println("On average, how many beers will you consume each day?");
+        dailyBeer = scanner.nextDouble();
+
+        yearlyAns = dailyBeer * YEAR;
+
+        System.out.printf("That is approximately %.2f beers in one year.\n", yearlyAns);
+
+        calorieIntake = yearlyAns * CALORIE;
+
+        System.out.printf("In one year, you will consume approximately %.2f calories from beer alone.", calorieIntake);
     }
 }
 
-// FORMULA: multiply the energy value by 4184
+// FORMULA: yearlyAns * CALORIE
 // FORMULA: beerConsume * 365(year)
 
 //TODO:
