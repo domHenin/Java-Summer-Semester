@@ -1,3 +1,13 @@
+///////////////////////////////////////////////////////////////////////////////
+//                   ALL STUDENTS COMPLETE THESE SECTIONS
+// Title:            HW2 Basic IO Program
+// Semester:         (cop2800c) Summer 2019
+//
+// Author:           Dominic Heningburg
+// Date:             5/19/2019
+//
+//////////////////// ``````````````````````````````````` ////////////////////
+
 package com.valencia.professor.macon.modules.hw2_basic_IO_program;
 
 import java.util.Scanner;
