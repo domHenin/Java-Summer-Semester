@@ -12,35 +12,89 @@ public class HwFour {
 
 //        int count=20;
 
-        System.out.println("Name: ");
-        String name = scanner.nextLine();
+//        System.out.println("Name: ");
+//        String name = scanner.nextLine();
+//
+//        for (int i=0; i<=20; i++){
+//            System.out.println(i+" "+name);
+//        }
 
-        for (int i=0; i<=20; i++){
-            System.out.println(i+" "+name);
-        }
+        char option;
 
+        do {
+            option = getChoice();
 
-
-        System.out.println("Choose an option: ");
-        int option = 0;
-
-        option = scanner.nextInt();
-
-        switch (option) {
-            case 1:
-                System.out.println("Enter first name: ");
-                String userName = scanner.nextLine();
-
+            switch (option) {
+                case 'N':
+                    System.out.println("Enter first name: ");
+                    String userName = scanner.nextLine();
+                    System.out.println(userName+"\n");
                 for (int i=1; i<=20; i++){
-                    System.out.println(i+" "+userName);
+                    System.out.println(i+" "+userName+"\n");
                 }
-                break;
+                    break;
 
-            case 2:
-                System.out.println("Enter age: ");
-                int userAge = scanner.nextInt();
-                int getAge = userAge * 2;
-                break;
+                case 'A':
+                    System.out.println("Enter age: ");
+                    int userAge = scanner.nextInt();
+                    int getAge = userAge * 2;
+
+                    System.out.println("Age Doubled: "+getAge);
+
+                    if (userAge >= 10 && userAge <= 19){
+                        System.out.printf("Since you are %d years old, you are a teenager", userAge);
+                    } else {
+                        System.out.printf("Since you are %d years old, you are NOT a teenager\n", userAge);
+                    }
+                    break;
+
+                case 'I':
+                    int newVal;
+
+                    System.out.println("Enter Number: ");
+                    newVal = scanner.nextInt();
+
+                    if (newVal >= 3 && newVal <= 50) {
+                        buildTriangle(newVal);
+                    } else {
+                        System.out.println("ERROR!");
+                    }
+
+//                    buildTriangle(newVal);
+            }
+        } while (option != 'Q');
+
+
+    }
+
+    public static char getChoice() {
+        char result;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("User [N]ame");
+        System.out.println("User [A]ge");
+        System.out.println("User [I]nteger Input");
+        System.out.println("[Q]uit Program\n");
+
+        System.out.println("Enter Selection: ");
+
+        result = scanner.nextLine().toUpperCase().charAt(0);
+
+        return result;
+    }
+
+    public static void buildTriangle(int n) {
+        for (int i=0; i<n; i++) {
+            for (int j=n-i; j>1; j--) {
+                System.out.print(" ");
+            }
+
+            for (int j=0; j<=i; j++ ) {
+                System.out.print("* ");
+            }
+
+            System.out.println();
         }
     }
 }
