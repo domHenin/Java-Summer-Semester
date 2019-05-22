@@ -10,38 +10,38 @@ public class HwFour {
     public static void main(String[] args) {
 //        System.out.println("have mercy upon me, oh GOD of abraham, issac, and jacob");
 
-//        System.out.println("Enter a number");
+//        int count=20;
 
-        int firNum=2;
-        int secNum=0;
+        System.out.println("Name: ");
+        String name = scanner.nextLine();
 
-
-//        secNum = firNum + firNum;
-//        secNum =+ firNum;
-
-        firNum =+ secNum;
-
-        System.out.println(firNum);
+        for (int i=0; i<=20; i++){
+            System.out.println(i+" "+name);
+        }
 
 
 
-//NOTES: left here:: attempting to add firNum to itself then output. goodLuck()
+        System.out.println("Choose an option: ");
+        int option = 0;
 
+        option = scanner.nextInt();
 
+        switch (option) {
+            case 1:
+                System.out.println("Enter first name: ");
+                String userName = scanner.nextLine();
 
-//        System.out.println("Choose an option: ");
-//        int option = 0;
-//
-//        switch (option) {
-//            case 1:
-//                System.out.println("Enter first name: ");
-//                String userName = scanner.nextLine();
-//                break;
-//            case 2:
-//                System.out.println("Enter age: ");
-//                int userAge = scanner.nextInt();
-//                int getAge += userAge;
-//        }
+                for (int i=1; i<=20; i++){
+                    System.out.println(i+" "+userName);
+                }
+                break;
+
+            case 2:
+                System.out.println("Enter age: ");
+                int userAge = scanner.nextInt();
+                int getAge = userAge * 2;
+                break;
+        }
     }
 }
 
