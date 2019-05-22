@@ -4,7 +4,6 @@ public class RealBeer {
 
     public static final int YEAR = 365;
     public static final int CALORIE = 150;
-    public static final int ONCE = 12;
     public static final int POUND = 3650;
 
     private double dailyBeer=0;

@@ -33,7 +33,7 @@ public class HwThree {
 }
 
 // FORMULA: yearlyAns * CALORIE
-// FORMULA: beerConsume * 365(year)
+// FORMULA: beerConsume * 365(YEAR)
 // FORMULA: calorieIntake / 3650
 
 //TODO:
