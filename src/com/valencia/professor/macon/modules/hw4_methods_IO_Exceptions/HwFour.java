@@ -10,15 +10,6 @@ public class HwFour {
     public static void main(String[] args) {
 //        System.out.println("have mercy upon me, oh GOD of abraham, issac, and jacob");
 
-//        int count=20;
-
-//        System.out.println("Name: ");
-//        String name = scanner.nextLine();
-//
-//        for (int i=0; i<=20; i++){
-//            System.out.println(i+" "+name);
-//        }
-
         char option;
 
         do {
@@ -42,7 +33,7 @@ public class HwFour {
                     System.out.println("Age Doubled: "+getAge);
 
                     if (userAge >= 10 && userAge <= 19){
-                        System.out.printf("Since you are %d years old, you are a teenager", userAge);
+                        System.out.printf("Since you are %d years old, you are a teenager\n", userAge);
                     } else {
                         System.out.printf("Since you are %d years old, you are NOT a teenager\n", userAge);
                     }
@@ -51,7 +42,7 @@ public class HwFour {
                 case 'I':
                     int newVal;
 
-                    System.out.println("Enter Number: ");
+                    System.out.println("Enter Number (3-50): ");
                     newVal = scanner.nextInt();
 
                     if (newVal >= 3 && newVal <= 50) {
@@ -59,8 +50,10 @@ public class HwFour {
                     } else {
                         System.out.println("ERROR!");
                     }
+                    break;
 
-//                    buildTriangle(newVal);
+                default:
+                    break;
             }
         } while (option != 'Q');
 
@@ -72,10 +65,12 @@ public class HwFour {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("User [N]ame");
-        System.out.println("User [A]ge");
-        System.out.println("User [I]nteger Input");
-        System.out.println("[Q]uit Program\n");
+        System.out.println("#########################");
+        System.out.println("# User [N]ame\t\t\t#");
+        System.out.println("# User [A]ge\t\t\t#");
+        System.out.println("# User [I]nteger Input\t#");
+        System.out.println("# [Q]uit Program\t\t#");
+        System.out.println("#########################");
 
         System.out.println("Enter Selection: ");
 
