@@ -33,6 +33,7 @@ public class HwFour {
                 case 'A':
                     System.out.println("Enter age: ");
                     int userAge = scanner.nextInt();
+                    scanner.nextLine(); //TO FIX BUG
                     int getAge = userAge * 2;
 
                     System.out.println("Age Doubled: "+getAge);
@@ -49,6 +50,7 @@ public class HwFour {
 
                     System.out.println("Enter Number (3-50): ");
                     newVal = scanner.nextInt();
+                    scanner.nextLine(); //TO FIX BUG
 
                     if (newVal >= 3 && newVal <= 50) {
                         buildTriangle(newVal);
@@ -66,8 +68,6 @@ public class HwFour {
                     break;
             }
         } while (option != 'Q');
-
-
     }
 
     public static char getChoice() {
@@ -92,10 +92,6 @@ public class HwFour {
     public static void buildTriangle(int n) throws IOException {
 
         File file = new File("triangle.txt");
-//      /User/domhe/OneDrive/Desktop/Valencia_Summer_Semester/Java-Programming/
-
-//        File file = new File("triangle.txt");
-
 //TEST::
 //        if(!file.canWrite()) {
 //            System.out.println("File cannot be created.");
@@ -106,20 +102,17 @@ public class HwFour {
 
         for (int i=0; i<n; i++) {
             for (int j=n-i; j>1; j--) {
-//              System.out.print(" ");
                 output.print(" ");
             }
 
             for (int j=0; j<=i; j++ ) {
-//              System.out.print("X ");
                 output.print("X ");
             }
-
-            System.out.println();
+            output.println();
         }
-        System.out.println("\n");
-
         output.close();
+
+        System.out.println("Your output is located in the Text File.");
     }
 }
 
