@@ -1,5 +1,10 @@
 package com.valencia.professor.macon.modules.hw4_methods_IO_Exceptions;
 
+import java.io.*;
+import java.util.*;
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 import java.lang.Math;
 
@@ -7,7 +12,7 @@ public class HwFour {
 
     static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 //        System.out.println("have mercy upon me, oh GOD of abraham, issac, and jacob");
 
         char option;
@@ -48,8 +53,13 @@ public class HwFour {
                     if (newVal >= 3 && newVal <= 50) {
                         buildTriangle(newVal);
                     } else {
-                        System.out.println("ERROR!");
+                        System.out.println("ERROR!!");
                     }
+                    break;
+
+                case 'Q':
+                    System.out.println("Exiting Program!");
+                    System.out.println("Thank you for your time.");
                     break;
 
                 default:
@@ -79,18 +89,37 @@ public class HwFour {
         return result;
     }
 
-    public static void buildTriangle(int n) {
+    public static void buildTriangle(int n) throws IOException {
+
+        File file = new File("triangle.txt");
+//      /User/domhe/OneDrive/Desktop/Valencia_Summer_Semester/Java-Programming/
+
+//        File file = new File("triangle.txt");
+
+//TEST::
+//        if(!file.canWrite()) {
+//            System.out.println("File cannot be created.");
+//            System.exit(1);
+//        }
+
+        PrintWriter output = new PrintWriter(file);
+
         for (int i=0; i<n; i++) {
             for (int j=n-i; j>1; j--) {
-                System.out.print(" ");
+//              System.out.print(" ");
+                output.print(" ");
             }
 
             for (int j=0; j<=i; j++ ) {
-                System.out.print("* ");
+//              System.out.print("X ");
+                output.print("X ");
             }
 
             System.out.println();
         }
+        System.out.println("\n");
+
+        output.close();
     }
 }
 
