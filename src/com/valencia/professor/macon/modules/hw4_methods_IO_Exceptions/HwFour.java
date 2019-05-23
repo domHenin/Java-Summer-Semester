@@ -1,3 +1,13 @@
+///////////////////////////////////////////////////////////////////////////////
+//                   ALL STUDENTS COMPLETE THESE SECTIONS
+// Title:            HW4 Methods and IO Exceptions
+// Semester:         (cop2800c) Summer 2019
+//
+// Author:           Dominic Heningburg
+// Date:             6/03/2019
+//
+//////////////////// ``````````````````````````````````` ////////////////////
+
 package com.valencia.professor.macon.modules.hw4_methods_IO_Exceptions;
 
 import java.io.*;
