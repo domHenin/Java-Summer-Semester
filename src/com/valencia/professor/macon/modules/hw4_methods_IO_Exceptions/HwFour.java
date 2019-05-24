@@ -35,7 +35,7 @@ public class HwFour {
                     System.out.println("Enter first name: ");
                     String userName = scanner.nextLine();
                     String capName = userName.substring(0, 1).toUpperCase() + userName.substring(1);
-                    System.out.println(capName+"\n");
+                    System.out.println("Name Entered: "+userName+"\n");
                 for (int i=1; i<=20; i++){
                     System.out.println(i+". "+capName+"\n");
                 }
