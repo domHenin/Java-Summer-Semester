@@ -34,9 +34,10 @@ public class HwFour {
                 case 'N':
                     System.out.println("Enter first name: ");
                     String userName = scanner.nextLine();
-                    System.out.println(userName+"\n");
+                    String capName = userName.substring(0, 1).toUpperCase() + userName.substring(1);
+                    System.out.println(capName+"\n");
                 for (int i=1; i<=20; i++){
-                    System.out.println(i+" "+userName+"\n");
+                    System.out.println(i+". "+capName+"\n");
                 }
                     break;
 
