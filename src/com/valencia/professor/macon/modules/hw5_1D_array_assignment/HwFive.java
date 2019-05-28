@@ -1,3 +1,13 @@
+///////////////////////////////////////////////////////////////////////////////
+//                   ALL STUDENTS COMPLETE THESE SECTIONS
+// Title:            HW 5: 1D Array Assignment
+// Semester:         (cop2800c) Summer 2019
+//
+// Author:           Dominic Heningburg
+// Date:             6/10/2019
+//
+//////////////////// ``````````````````````````````````` ////////////////////
+
 package com.valencia.professor.macon.modules.hw5_1D_array_assignment;
 
 public class HwFive {
