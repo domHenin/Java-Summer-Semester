@@ -17,11 +17,13 @@ public class HwFive {
     public static void main(String[] args) {
 //        System.out.println("blessed in the name of JESUS, the name above all names.");
 
+        double[] myArray = new double[10];
         int max=100;
         int min=1;
         int range = max - min +1;
+        double maxArray = myArray[0];
+        double minArray = myArray[0];
 
-        double[] myArray = new double[100];
 
 
         for (int i=1; i< myArray.length; i++) {
@@ -29,11 +31,32 @@ public class HwFive {
             System.out.printf("%.0f\n", myArray[i]);
         }
 
+
+        for(int i = 1; i < myArray.length; i++)
+        {
+            if(myArray[i] > maxArray) {
+                maxArray = myArray[i];
+            }
+
+            if (myArray[i] < minArray) {
+                minArray = myArray[i];
+            }
+        }
+        System.out.printf("Max Array Value: %.0f\n", maxArray);
+        System.out.printf("Min Array Value: %.0f\n", minArray);
+// WORKING ON PRINTING OUT MINIMUM ARRAY.
+
+//        for (int i=1; i < myArray.length; i++) {
+//            if (myArray[i] < minArray) {
+//                minArray = myArray[i];
+//            }
+//        }
+
 // Average in MAIN:
         double result;
         result = calculateAverage(myArray);
 
-        System.out.println("The average is: " +result);
+        System.out.printf("The average is: %.0f\n", result);
     }
 
 // METHOD: calculate the average.
