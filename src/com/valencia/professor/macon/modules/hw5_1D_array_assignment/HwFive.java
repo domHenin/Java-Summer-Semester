@@ -10,14 +10,47 @@
 
 package com.valencia.professor.macon.modules.hw5_1D_array_assignment;
 
+import java.util.Random;
+import java.util.Arrays;
+
 public class HwFive {
     public static void main(String[] args) {
 //        System.out.println("blessed in the name of JESUS, the name above all names.");
 
-        int[] myArray = new int[100];
+        int max=100;
+        int min=1;
+        int range = max - min +1;
+
+        double[] myArray = new double[100];
 
 
+        for (int i=1; i< myArray.length; i++) {
+            myArray[i] = (Math.random() * range) + min;
+            System.out.printf("%.0f\n", myArray[i]);
+        }
+
+// Average in MAIN:
+        double result;
+        result = calculateAverage(myArray);
+
+        System.out.println("The average is: " +result);
     }
+
+// METHOD: calculate the average.
+    static double calculateAverage(double[] array) {
+        double average=0.0, sum=0.0;
+
+        for (int i=0; i<array.length; i++) {
+            sum += array[i];
+        }
+
+        average = sum / array.length;
+
+        return average;
+    }
+
+////METHOD: sort the array.
+//    static
 }
 
 //TODO:
