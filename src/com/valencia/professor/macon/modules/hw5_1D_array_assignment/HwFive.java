@@ -19,19 +19,29 @@ public class HwFive {
 
         double[] myArray = new double[10];
         int max=100;
-        int min=1;
+        int min=0;
         int range = max - min +1;
         double maxArray = myArray[0];
-        double minArray = myArray[0];
+        double minArray = Integer.MAX_VALUE;
 
 
-
+//  Randomize Array.
         for (int i=1; i< myArray.length; i++) {
             myArray[i] = (Math.random() * range) + min;
             System.out.printf("%.0f\n", myArray[i]);
         }
 
+// WORKING ON SORT ASCENDING: https://www.tutorialspoint.com/java/util/arrays_sort_double.htm
+        Arrays.sort(myArray);
+        System.out.println("Sorted Array: ");
 
+        for (double sortArray : myArray) {
+            System.out.printf("%.0f ",sortArray);
+        }
+
+
+
+// Max & Min Array.
         for(int i = 1; i < myArray.length; i++)
         {
             if(myArray[i] > maxArray) {
@@ -42,7 +52,7 @@ public class HwFive {
                 minArray = myArray[i];
             }
         }
-        System.out.printf("Max Array Value: %.0f\n", maxArray);
+        System.out.printf("\nMax Array Value: %.0f\n", maxArray);
         System.out.printf("Min Array Value: %.0f\n", minArray);
 // WORKING ON PRINTING OUT MINIMUM ARRAY.
 
@@ -61,7 +71,7 @@ public class HwFive {
 
 // METHOD: calculate the average.
     static double calculateAverage(double[] array) {
-        double average=0.0, sum=0.0;
+        double average, sum=0.0;
 
         for (int i=0; i<array.length; i++) {
             sum += array[i];
