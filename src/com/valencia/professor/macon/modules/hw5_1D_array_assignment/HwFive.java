@@ -72,8 +72,8 @@ public class HwFive {
     public static void getMaxMinValue(int[] array) {
         Arrays.sort(array);
 
-        System.out.println("Minimum Value:"+ array[0]);
-        System.out.println("Maximum Value:"+array[array.length - 1]);
+        System.out.println("Highest Number:"+array[array.length - 1]);
+        System.out.println("Lowest Number:"+ array[0]);
     }
 
 
@@ -90,7 +90,7 @@ public class HwFive {
                 if (searchNum == array[i]){
                     ifFound = true;
 //                    System.out.println("Found");
-                    System.out.println("The number was found at index:"+i);
+                    System.out.println("The number was found at index:["+i+"]");
                 } else {
                     System.out.println("Not Found");
                 }
