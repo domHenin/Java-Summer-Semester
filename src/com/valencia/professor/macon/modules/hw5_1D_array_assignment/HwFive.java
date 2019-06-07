@@ -10,6 +10,7 @@
 
 package com.valencia.professor.macon.modules.hw5_1D_array_assignment;
 
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -19,85 +20,30 @@ public class HwFive {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-//       System.out.println("blessed is the name of JESUS, the name above all names.");
+//     System.out.println("blessed is the name of JESUS, the name above all names.");
 
-        double[] myArray = new double[10];
-        int max=100;
-        int min=0;
-        int range = max - min +1;
-        double maxArray = myArray[0];
-        double minArray = Integer.MAX_VALUE;
+        int[] myArray = new int[100];
 
+//  Randomize Array:
+        System.out.println("Printed Array:");
+        Random randomArray = new Random();
+        int[] myArrayTest = new int[10];
 
-
-
-//  Randomize Array.
-        for (int i=1; i< myArray.length; i++) {
-            myArray[i] = (Math.random() * range) + min;
-            System.out.printf("%.0f\n", myArray[i]);
+        for (int i=0; i<myArray.length; i++) {
+            myArray[i] = randomArray.nextInt(100);
+            System.out.println(myArray[i]);
         }
 
-// WORKING ON SORT ASCENDING: https://www.tutorialspoint.com/java/util/arrays_sort_double.htm --> COMPLETE
-        Arrays.sort(myArray);
-        System.out.println("Sorted Array: ");
-
-        for (double sortArray : myArray) {
-            System.out.printf("%.0f ",sortArray);
-        }
-
-
-
-// Max & Min Array.
-        for(int i = 1; i < myArray.length; i++) {
-            if(myArray[i] > maxArray) {
-                maxArray = myArray[i];
-            }
-
-            if (myArray[i] < minArray) {
-                minArray = myArray[i];
-            }
-        }
-        System.out.printf("\nMax Array Value: %.0f\n", maxArray);
-        System.out.printf("Min Array Value: %.0f\n", minArray);
-
-// WORKING ON PRINTING OUT MINIMUM ARRAY.
-
-//        for (int i=1; i < myArray.length; i++) {
-//            if (myArray[i] < minArray) {
-//                minArray = myArray[i];
-//            }
-//        }
-
-// Average in MAIN:
-        double result;
-        result = calculateAverage(myArray);
-
-        System.out.printf("The average is: %.0f\n", result);
-
-//test: userInput
-        System.out.println("enter a number: [1-100]");
-
-        double choice = scanner.nextDouble();
-
-        if (choice >= 1 && choice <= 100) {
-            System.out.println("searching for number");
-        } else {
-            System.out.println("ERROR!");
-        }
-
-
-
-        for (choice : myArray) {
-
-
-            System.out.println(choice);
-        }
-
+//  Calling Methods:
+        sortArray(myArray);
+        calculateAverage(myArray);
+        getMaxMinValue(myArray);
+        obtainInput(myArray);
 
     } //end of MAIN.
 
-// METHOD: calculate the average.
-    static double calculateAverage(double[] array) {
+    // METHOD: calculate the average.
+    static void calculateAverage(int[] array) {
         double average, sum=0.0;
 
         for (int i=0; i<array.length; i++) {
@@ -106,27 +52,62 @@ public class HwFive {
 
         average = sum / array.length;
 
-        return average;
+        System.out.println("Array Average:"+average);
     }
 
-// METHOD: sort the array.
 
-//METHOD: userChoice
-    static double obtainInput(int choice) {
-        choice = scanner.nextInt();
+    // METHOD: sort the array.
+    public static void sortArray(int[] array) {
+        Arrays.sort(array);
+
+        System.out.print("Sorted Array:");
+
+        for (int i=0; i<array.length; i++) {
+            System.out.print(" "+array[i]);
+        }
+        System.out.println();
+    }
+
+    //  METHOD: Max&Min Value.
+    public static void getMaxMinValue(int[] array) {
+        Arrays.sort(array);
+
+        System.out.println("Minimum Value:"+ array[0]);
+        System.out.println("Maximum Value:"+array[array.length - 1]);
+    }
+
+
+    //METHOD: search array.
+    static void obtainInput(int[] array) {
+        int searchNum;
+        boolean ifFound = false;
 
         System.out.println("Enter a number [1-100]");
+        searchNum = scanner.nextInt();
 
-        if (choice >=1 || choice <= 100) {
-            System.out.println("inside 'if statement in method'");
+        if (searchNum >=1 && searchNum <= 100) {
+            for (int i=0; i<array.length; i++) {
+                if (searchNum == array[i]){
+                    ifFound = true;
+//                    System.out.println("Found");
+                    System.out.println("The number was found at index:"+i);
+                } else {
+                    System.out.println("Not Found");
+                }
+            }
         } else {
             System.out.println("ERROR!");
+            System.out.println(searchNum+" is not in the scope.");
         }
-
-        return choice;
     }
 
 }
+
+// TODO:
+//        > clean up as much as possible
+//        > try to exclude 0 from the Randomized Array
+//        > find a way to space out the sorted array --> COMPLETE
+//        > FINISH TASK:: Display each number from 1 to 100 and the number of times each is found in the array.
 
 //TODO:
 //        Program Specifications:
