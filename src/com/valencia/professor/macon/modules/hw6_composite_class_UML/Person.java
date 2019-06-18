@@ -1,30 +1,32 @@
-package com.valencia.professor.macon.modules.hw6_composite_class_UML;
+package src.com.valencia.professor.macon.modules.hw6_composite_class_UML;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Person {
 
     Scanner scanner = new Scanner(System.in);
 
-//  VARIABLES:
-    private char gender;
-    private String name;
+    //  VARIABLES:
+    private String gender;
+//  private String name;
     private int age;
     private double salary;
 
-//  GETTERS:
-    public void setGender(char gender) { this.gender = gender; }
-    public void setName(String name) { this.name = name; }
+
+    //  GETTERS:
+    public void setGender(String gender) { this.gender = gender; }
+//  public void setName(String name) { this.name = name; }
     public void setAge(int age) { this.age = age; }
     public void setSalary(int salary) { this.salary = salary; }
 
-//  SETTERS:
-    public char getGender() { return gender; }
-    public String getName() { return name; }
+    //  SETTERS:
+    public String getGender() { return gender; }
+//  public String getName() { return name; }
     public int getAge() { return age; }
     public double getSalary() { return salary; }
 
-//    int grabAge() {
+    //    int grabAge() {
 //        age = scanner.nextInt();
 //
 //        System.out.println(age);
@@ -36,28 +38,57 @@ public class Person {
 
         System.out.println("Enter Salary: ");
         salary = scanner.nextDouble();
-
+//        scanner.nextLine();
 //      boolean salaryScope = false;
 
-        if (salary>=0) {
-            System.out.println("Salary: "+salary);
-        } else {
-            System.out.println("ERROR! "+salary+" out of scope.");
-        }
+//        if (salary>=0) {
+//            System.out.println("Salary: "+salary);
+//        } else {
+//            System.out.println("ERROR! "+salary+" out of scope.");
+//        }
+
 //        return salary;
     }
 
-    public void grabGender() {
-        System.out.println("Enter Gender(M, F, O): ");
-        gender = scanner.next().charAt(0);
+    public String grabGender() {
+//        String result;
+
+        System.out.println("Enter Gender(M[ale], F[emale], O[ther]): ");
+        gender = scanner.nextLine();
+
+        if (gender=="M" || gender=="m") {
+//            return "M[ale]";
+            System.out.println("MALE");
+        } else if (gender=="F" || gender=="f") {
+//            return "F[emale]";
+            System.out.println("FEMALE");
+        }
+        //TODO: work on option only being 'M', 'F', or 'O'
+//        else {
+//            System.out.println("Choose M[ale] or F[emale].");
+//        }
+//        gender=scanner.next();
 //      scanner.nextLine();
 
-//        System.out.println(gender);
+//TEST: System.out.println(gender);
 
-//        switch (gender) {
-//            case a:
-//
-//        }
+        return gender;
+    }
+
+
+    public void grabAge() {
+        System.out.println("Enter Age:");
+        age = scanner.nextInt();
+
+        if (age<=120) {
+//            return age;
+        } else {
+
+        }
+        //TODO: age should be between 1 and 120
+
+        scanner.nextLine();
+//TEST: System.out.println(age);
     }
 
 } //end of Person
