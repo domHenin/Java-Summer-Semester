@@ -1,4 +1,14 @@
-package src.com.valencia.professor.macon.modules.hw6_composite_class_UML;
+///////////////////////////////////////////////////////////////////////////////
+//                   ALL STUDENTS COMPLETE THESE SECTIONS
+// Title:            HW 6: Composite Class and UML
+// Semester:         (cop2800c) Summer 2019
+//
+// Author:           Dominic Heningburg
+// Date:             6/21/2019
+//
+//////////////////// ``````````````````````````````````` ////////////////////
+
+package com.valencia.professor.macon.modules.hw6_composite_class_UML;
 
 import java.util.Scanner;
 
@@ -14,67 +24,57 @@ public class HwSix {
         int userAge;
         int userSalary;
 
-//  CONSTRUCTOR:
+//  CONSTRUCTOR: Person
         Person person = new Person();
         Person person1 = new Person();
         Person person2 = new Person();
-
+//  CONSTRUCTOR: Name
         Name name = new Name();
         Name name1 = new Name();
         Name name2 = new Name();
 
-//  USER NAME:
-//        System.out.println("Enter Name: ");
-//        person.setName(userName=scanner.nextLine());
-//        System.out.println(userName);
-
-//  USER AGE:
-//        System.out.println("Enter Age:");
-//        person.setAge(userAge=scanner.nextInt());
-//        System.out.println(userAge);
 
         name.grabName();
         name1.grabName();
-//        name2.grabName();
-
-
-        person.grabAge();
-        person1.grabAge();
-//        person2.grabAge();
+        name2.grabName();
 
         person.grabGender();
         person1.grabGender();
-//        person2.grabGender();
+        person2.grabGender();
+
+        person.grabAge();
+        person1.grabAge();
+        person2.grabAge();
+
 
         person.grabSalary();
         person1.grabSalary();
-//        person2.grabSalary();
+        person2.grabSalary();
 
         System.out.println(name.getName().toUpperCase()+"'s Info: ");
-        System.out.print("AGE: "+person.getAge()+" ");
-        System.out.print("GENDER: "+person.getGender().toUpperCase()+" ");
-        System.out.print("SALARY: "+person.getSalary());
+        Info(person);
 
+//  NEW SPACE
         System.out.println();
         System.out.println();
 
         System.out.println(name1.getName()+"'s Info: ");
-        System.out.print("AGE: "+person1.getAge()+" ");
-        System.out.print("GENDER: "+person1.getGender().toUpperCase()+" ");
-        System.out.print("SALARY: "+person1.getSalary());
+        Info(person1);
+
+//  NEW SPACE
+        System.out.println();
+        System.out.println();
+
+        System.out.println(name2.getName()+"'s Info: ");
+        Info(person2);
     } //end of main
+
+    private static void Info(Person person1) {
+        System.out.print("GENDER: "+person1.getGender().toUpperCase()+" ");
+        System.out.print("AGE: "+person1.getAge()+" ");
+        System.out.print("SALARY: "+person1.getSalary());
+    }
 } //end of HwSix
-
-//    public String toString() {
-////        return String.format("%d: %s", id, name);
-//        StringBuilder stringBuilder = new StringBuilder();
-//
-//        stringBuilder.append(id)
-//                .append(": ")
-//                .append(name);
-//        return stringBuilder.toString();
-//    }
-
 
 
 //TODO:

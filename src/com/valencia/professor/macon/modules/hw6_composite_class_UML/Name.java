@@ -1,4 +1,4 @@
-package src.com.valencia.professor.macon.modules.hw6_composite_class_UML;
+package com.valencia.professor.macon.modules.hw6_composite_class_UML;
 
 import java.util.Scanner;
 
