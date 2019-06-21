@@ -8,7 +8,7 @@
 //
 //////////////////// ``````````````````````````````````` ////////////////////
 
-package com.valencia.professor.macon.modules.hw6_composite_class_UML;
+package src.com.valencia.professor.macon.modules.hw6_composite_class_UML;
 
 import java.util.Scanner;
 
@@ -32,51 +32,137 @@ public class HwSix {
         Name name1 = new Name();
         Name name2 = new Name();
 
+        System.out.println("Do you have a middle name?");
+        System.out.println("[y]es // [n]o");
 
-        name.grabName();
-        name1.grabName();
-        name2.grabName();
+        String choice=scanner.nextLine();
 
-        person.grabGender();
-        person1.grabGender();
-        person2.grabGender();
+        switch (choice) {
+            case "y":
+            //First Name.
+                System.out.println("Person 1 Enter First Name: ");
+                name.setFirName(scanner.nextLine());
 
-        person.grabAge();
-        person1.grabAge();
-        person2.grabAge();
+                System.out.println("Person 2 Enter First Name: ");
+                name1.setFirName(scanner.nextLine());
 
+                System.out.println("Person 3 Enter First Name: ");
+                name2.setFirName(scanner.nextLine());
 
-        person.grabSalary();
-        person1.grabSalary();
-        person2.grabSalary();
+            //Middle Name.
+                System.out.println(name.getFirName()+"'s Middle Name: ");
+                name.setMiddName(scanner.nextLine());
 
-//  Calling Methods
-        System.out.println(name.getName().toUpperCase()+"'s Info: ");
+                System.out.println(name1.getFirName()+"'s Middle Name: ");
+                name1.setMiddName(scanner.nextLine());
+
+                System.out.println(name2.getFirName()+"'s Middle Name: ");
+                name2.setMiddName(scanner.nextLine());
+
+            //Last Name.
+                System.out.println(name.getFirName()+"'s Last Name: ");
+                name.setLasName(scanner.nextLine());
+
+                System.out.println(name1.getFirName()+"'s Last Name: ");
+                name1.setLasName(scanner.nextLine());
+
+                System.out.println(name2.getFirName()+"'s Last Name: ");
+                name2.setLasName(scanner.nextLine());
+
+             //Full Name.
+                System.out.println("Person 1: Full Name: "+name.getFirName()+" "+name.getMiddName()+" "+name.getLasName());
+                System.out.println("Person 2: Full Name: "+name1.getFirName()+" "+name1.getMiddName()+" "+name1.getLasName());
+                System.out.println("Person 3: Full Name: "+name2.getFirName()+" "+name2.getMiddName()+" "+name2.getLasName());
+
+                break;
+
+            case "n":
+            //First Name:
+                System.out.println("Person 1 Enter First Name: ");
+                name.setFirName(scanner.nextLine());
+
+                System.out.println("Person 2 Enter First Name: ");
+                name1.setFirName(scanner.nextLine());
+
+                System.out.println("Person 3 Enter First Name: ");
+                name2.setFirName(scanner.nextLine());
+
+             //Last Name:
+                System.out.println(name.getFirName()+"'s Last Name: ");
+                name.setLasName(scanner.nextLine());
+
+                System.out.println(name1.getFirName()+"'s Last Name: ");
+                name1.setLasName(scanner.nextLine());
+
+                System.out.println(name2.getFirName()+"'s Last Name: ");
+                name2.setLasName(scanner.nextLine());
+
+                System.out.println();
+
+            //Full Name:
+                System.out.println("Person 1: Full Name: "+name.getFirName()+" "+name.getLasName());
+                System.out.println("Person 2: Full Name: "+name1.getFirName()+" "+name1.getLasName());
+                System.out.println("Person 3: Full Name: "+name2.getFirName()+" "+name2.getLasName());
+                break;
+
+            default:
+                break;
+        }
+
+        System.out.println();
+
+//  GET DATA:
+        System.out.println(name.getFirName()+"'s Info: ");
+        getInfo(person);
+
+        System.out.println(name1.getFirName()+"'s Info: ");
+        getInfo(person1);
+
+        System.out.println(name2.getFirName()+"'s Info: ");
+        getInfo(person2);
+
+//  PRINT DATA.
+        //Person One.
+        System.out.println(name.getFirName().toUpperCase()+"'s Info: ");
         Info(person);
-
-//  NEW SPACE
-        System.out.println();
         System.out.println();
 
-//  Calling Methods
-        System.out.println(name1.getName().toUpperCase()+"'s Info: ");
+        //Person Two.
+        System.out.println(name1.getFirName().toUpperCase()+"'s Info: ");
         Info(person1);
-
-//  NEW SPACE
-        System.out.println();
         System.out.println();
 
-        System.out.println(name2.getName().toUpperCase()+"'s Info: ");
+        //Person Three.
+        System.out.println(name2.getFirName().toUpperCase()+"'s Info: ");
         Info(person2);
-    } //end of main
+        System.out.println();
 
-    private static void Info(Person person1) {
-        System.out.print("GENDER: "+person1.getGender().toUpperCase()+" ");
-        System.out.print("AGE: "+person1.getAge()+" ");
-        System.out.print("SALARY: $"+person1.getSalary());
+
+
+    }//end of main
+
+    private static void Info(Person person) {
+        System.out.print("GENDER: "+person.getGender().toUpperCase()+" ");
+        System.out.print("AGE: "+person.getAge()+" ");
+        System.out.print("SALARY: $"+person.getSalary());
+        System.out.println();
     } //end of Info
-} //end of HwSix
 
+    private static void getInfo(Person person) {
+        System.out.println("Enter Gender? [M]ale [F]emale");
+        person.setGender(scanner.nextLine());
+
+        System.out.println("Enter Age: ");
+        person.setAge(scanner.nextInt());
+        scanner.nextLine();
+        //TODO: work on logic for certain age input
+
+        System.out.println("Enter Salary: ");
+        person.setSalary(scanner.nextInt());
+        scanner.nextLine();
+        //TODO: work on logic for non-negative input
+    }
+} //end of HwSix
 
 //TODO:
 // Program Specifications:

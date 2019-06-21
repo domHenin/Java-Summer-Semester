@@ -1,4 +1,4 @@
-package com.valencia.professor.macon.modules.hw6_composite_class_UML;
+package src.com.valencia.professor.macon.modules.hw6_composite_class_UML;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -24,10 +24,12 @@ public class Person {
     public double getSalary() { return salary; }
 
 
+//TODO: clean up code. delete if not using logic
     public void grabSalary() {
 
         System.out.println("Enter Salary: ");
         salary = scanner.nextDouble();
+        scanner.next();
 //        scanner.nextLine();
 //      boolean salaryScope = false;
 
@@ -40,38 +42,39 @@ public class Person {
 //        return salary;
     }
 
-    public String grabGender() {
-//        String result;
+//    public String grabGender() {
+////        String result;
+//
+//        System.out.println("Enter Gender(M[ale], F[emale], O[ther]): ");
+//        gender = scanner.nextLine();
+////        setGender(scanner.nextLine());
+//
+//        if (gender=="M" || gender=="m") {
+////            return "M[ale]";
+//            System.out.println("MALE");
+//        } else if (gender=="F" || gender=="f") {
+////            return "F[emale]";
+//            System.out.println("FEMALE");
+//        }
+//        return gender;
+//    }
 
-        System.out.println("Enter Gender(M[ale], F[emale], O[ther]): ");
-        gender = scanner.nextLine();
 
-        if (gender=="M" || gender=="m") {
-//            return "M[ale]";
-            System.out.println("MALE");
-        } else if (gender=="F" || gender=="f") {
-//            return "F[emale]";
-            System.out.println("FEMALE");
-        }
-        return gender;
-    }
-
-
-    public void grabAge() {
-        System.out.println("Enter Age:");
-        age = scanner.nextInt();
-
-        do {
-            if (age<=120) {
-                return;
-            } else {
-                System.out.println("ERROR! "+age+" out of scope");
-                System.out.println("Enter age: ");
-                age=scanner.nextInt();
-            }
-        } while (age>121);
-        scanner.nextLine();
-    }
+//    public void grabAge() {
+//        System.out.println("Enter Age:");
+//        age = scanner.nextInt();
+//
+//        do {
+//            if (age<=120) {
+//                return;
+//            } else {
+//                System.out.println("ERROR! "+age+" out of scope");
+//                System.out.println("Enter age: ");
+//                age=scanner.nextInt();
+//            }
+//        } while (age>121);
+//        scanner.nextLine();
+//    }
 } //end of Person
 
 //TODO:
