@@ -8,7 +8,7 @@
 //
 //////////////////// ``````````````````````````````````` ////////////////////
 
-package src.com.valencia.professor.macon.modules.hw6_composite_class_UML;
+package com.valencia.professor.macon.modules.hw6_composite_class_UML;
 
 import java.util.Scanner;
 
@@ -33,7 +33,7 @@ public class HwSix {
         Name name2 = new Name();
 
         System.out.println("Do you have a middle name?");
-        System.out.println("[y]es // [n]o");
+        System.out.println("[y]es OR [n]o");
 
         String choice=scanner.nextLine();
 
@@ -73,7 +73,6 @@ public class HwSix {
                 System.out.println("Person 1: Full Name: "+name.getFirName()+" "+name.getMiddName()+" "+name.getLasName());
                 System.out.println("Person 2: Full Name: "+name1.getFirName()+" "+name1.getMiddName()+" "+name1.getLasName());
                 System.out.println("Person 3: Full Name: "+name2.getFirName()+" "+name2.getMiddName()+" "+name2.getLasName());
-
                 break;
 
             case "n":
@@ -154,14 +153,18 @@ public class HwSix {
 
         System.out.println("Enter Age: ");
         person.setAge(scanner.nextInt());
+
+        if (person.getAge() >=1 && person.getAge()<= 120) {
+
+        }
+
         scanner.nextLine();
         //TODO: work on logic for certain age input
 
         System.out.println("Enter Salary: ");
         person.setSalary(scanner.nextInt());
         scanner.nextLine();
-        //TODO: work on logic for non-negative input
-    }
+    } //end of getInfo
 } //end of HwSix
 
 //TODO:
