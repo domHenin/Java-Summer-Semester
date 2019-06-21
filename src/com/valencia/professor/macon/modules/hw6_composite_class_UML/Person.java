@@ -9,31 +9,21 @@ public class Person {
 
  //  VARIABLES:
     private String gender;
-//  private String name;
     private int age;
     private double salary;
 
 
 //  GETTERS:
     public void setGender(String gender) { this.gender = gender; }
-//  public void setName(String name) { this.name = name; }
     public void setAge(int age) { this.age = age; }
     public void setSalary(int salary) { this.salary = salary; }
 
 //  SETTERS:
     public String getGender() { return gender; }
-//  public String getName() { return name; }
     public int getAge() { return age; }
     public double getSalary() { return salary; }
 
-    //    int grabAge() {
-//        age = scanner.nextInt();
-//
-//        System.out.println(age);
-//
-//        return age;
-//    }
-//
+
     public void grabSalary() {
 
         System.out.println("Enter Salary: ");
@@ -63,15 +53,6 @@ public class Person {
 //            return "F[emale]";
             System.out.println("FEMALE");
         }
-        //TODO: work on option only being 'M', 'F', or 'O'
-//        else {
-//            System.out.println("Choose M[ale] or F[emale].");
-//        }
-//        gender=scanner.next();
-//      scanner.nextLine();
-
-//TEST: System.out.println(gender);
-
         return gender;
     }
 
@@ -89,14 +70,8 @@ public class Person {
                 age=scanner.nextInt();
             }
         } while (age>121);
-
-
-        //TODO: age should be between 1 and 120 -> COMPLETE
-
         scanner.nextLine();
-//TEST: System.out.println(age);
     }
-
 } //end of Person
 
 //TODO:

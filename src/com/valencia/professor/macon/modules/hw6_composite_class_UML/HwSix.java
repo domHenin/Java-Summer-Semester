@@ -21,13 +21,12 @@ public class HwSix {
 
 //  VARIABLES:
         String userName;
-        int userAge;
-        int userSalary;
 
 //  CONSTRUCTOR: Person
         Person person = new Person();
         Person person1 = new Person();
         Person person2 = new Person();
+
 //  CONSTRUCTOR: Name
         Name name = new Name();
         Name name1 = new Name();
@@ -51,6 +50,7 @@ public class HwSix {
         person1.grabSalary();
         person2.grabSalary();
 
+//  Calling Methods
         System.out.println(name.getName().toUpperCase()+"'s Info: ");
         Info(person);
 
@@ -58,22 +58,23 @@ public class HwSix {
         System.out.println();
         System.out.println();
 
-        System.out.println(name1.getName()+"'s Info: ");
+//  Calling Methods
+        System.out.println(name1.getName().toUpperCase()+"'s Info: ");
         Info(person1);
 
 //  NEW SPACE
         System.out.println();
         System.out.println();
 
-        System.out.println(name2.getName()+"'s Info: ");
+        System.out.println(name2.getName().toUpperCase()+"'s Info: ");
         Info(person2);
     } //end of main
 
     private static void Info(Person person1) {
         System.out.print("GENDER: "+person1.getGender().toUpperCase()+" ");
         System.out.print("AGE: "+person1.getAge()+" ");
-        System.out.print("SALARY: "+person1.getSalary());
-    }
+        System.out.print("SALARY: $"+person1.getSalary());
+    } //end of Info
 } //end of HwSix
 
 
