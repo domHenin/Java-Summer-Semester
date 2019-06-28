@@ -21,10 +21,13 @@ public class Bird extends Animal {
 
 //toString:
     public String toString() {
-        return "Bird: "+super.toString();
+
+        return "Bird: "+super.toString()+" Can FLy: "+canFly();
     }
 
-
+    public boolean canFly() {
+        return Math.random() < 0.5;
+    }
 }
 
 

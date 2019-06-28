@@ -5,19 +5,15 @@ public class HwSeven {
 //        System.out.println("to GOD all glory!");
 
         Animal animal = new Animal(120, 5);
-
         System.out.println(animal);
 
         Dog dog = new Dog(90, 3, "gizmo", "german sheperd", 25);
-
         System.out.println(dog);
 
         Bird bird = new Bird(35, 20, 90, true);
-
         System.out.println(bird);
 
         Cat cat = new Cat(12, 15, "shadow", 9);
-
         System.out.println(cat);
 
     }
