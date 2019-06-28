@@ -1,5 +1,7 @@
 package com.valencia.professor.macon.modules.hw7_inheritance_oop;
 
+import java.util.Random;
+
 public class Cat extends Animal {
     private String name;
     private int life;
@@ -21,9 +23,18 @@ public class Cat extends Animal {
 
 //toString:
     public String toString() {
-        return "Cat: Name: "+name+" I have "+life+" lives. "+super.toString();
+        return "Cat: Name: "+name+" I have "+life+" lives. "+super.toString()+" Lives: "+catLife();
     }
 
+    public int catLife() {
+        int lifeCount;
+
+        Random random = new Random();
+
+        int life=random.nextInt(9);
+
+        return life;
+    }
 }
 
 
