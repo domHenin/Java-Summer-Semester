@@ -17,6 +17,7 @@ public class Dog extends Animal {
     public void setName(String name) { this.name = name; }
     public void setBreed(String breed) { this.breed = breed; }
     public void setdOb(double dOb) { this.dOb = dOb; }
+//    TODO: add proper for date of birth
 
 
 //SETTERS:
@@ -25,7 +26,8 @@ public class Dog extends Animal {
     public double getdOb() { return dOb; }
 
     public String toString() {
-        return "Dog: Name: "+name+" "+super.toString();
+        return "Dog: Name: "+name+" "+super.toString()+" Breed: "+breed+" DoB: "+dOb;
+
     }
 
 }

@@ -1,5 +1,9 @@
 package com.valencia.professor.macon.modules.hw7_inheritance_oop;
 
+// TODO:
+// put in proper parameters
+// cat
+
 public class HwSeven {
     public static void main(String[] args) {
 //        System.out.println("to GOD all glory!");
@@ -7,13 +11,13 @@ public class HwSeven {
         Animal animal = new Animal(120, 5);
         System.out.println(animal);
 
-        Dog dog = new Dog(90, 3, "gizmo", "german sheperd", 25);
+        Dog dog = new Dog(72, 26, "gizmo", "german sheperd", 25);
         System.out.println(dog);
 
-        Bird bird = new Bird(35, 20, 90, true);
+        Bird bird = new Bird(13, 96, 72, true);
         System.out.println(bird);
 
-        Cat cat = new Cat(12, 15, "shadow", 9);
+        Cat cat = new Cat(10, 26, "shadow", 9);
         System.out.println(cat);
 
     }

@@ -4,7 +4,7 @@ public class Bird extends Animal {
     private double wingspan;
     private boolean fly;
 
-    public Bird(double height, double weight, double wingspan, boolean fly) {
+    public Bird(double weight, double height,  double wingspan, boolean fly) {
         super(weight, height);
         setWingspan(wingspan);
         this.wingspan=wingspan;
@@ -22,7 +22,7 @@ public class Bird extends Animal {
 //toString:
     public String toString() {
 
-        return "Bird: "+super.toString()+" Can FLy: "+canFly();
+        return "Bird: "+super.toString()+" Wingspan: "+wingspan+" Can FLy: "+canFly();
     }
 
     public boolean canFly() {
