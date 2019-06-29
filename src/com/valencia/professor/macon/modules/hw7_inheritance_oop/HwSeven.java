@@ -14,12 +14,11 @@ public class HwSeven {
         Dog dog = new Dog(72, 26, "gizmo", "german sheperd", 25);
         System.out.println(dog);
 
-        Bird bird = new Bird(13, 96, 72, true);
-        System.out.println(bird);
-
         Cat cat = new Cat(10, 26, "shadow", 9);
         System.out.println(cat);
 
+        Bird bird = new Bird(13, 96, 72, true);
+        System.out.println(bird);
     }
 }
 
