@@ -25,7 +25,7 @@ public class Team implements Owner, Coach, Player {
     public int salary() { return 5; }
 
     @Override
-    public int numberOfPlayers() { return 0; }
+    public int numberOfPlayers() { return 20; }
 
 //PLAYER: Override
     @Override

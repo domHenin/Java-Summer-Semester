@@ -44,25 +44,31 @@ public class HwTen {
 }
 
 
-//THOUGHT: TEAM -> COACH -> PLAYER
+//THEME: TEAM -> OWNER -> COACH -> PLAYER
 
-// team HAS A number of couch
-// team HAS A number of player
+// team HAS A number of rings
+// team HAS A city
 // team HAS A state
-// team HAS A
+// team HAS A name
 
 // ------------------------- //
-// coach HAS A player
+
+// owner HAS A year in role
+// owner HAS A net worth
+
+// ------------------------- //
+
 // coach HAS A number of players
-// coach HAS A trophy amount
+// coach HAS A number of years as coach
 // coach HAS A salary
 
 // ------------------------- //
-// player HAS A couch
-// player HAS A number
+
+// player HAS A name
+// player HAS A jersey number
 // player HAS A weight
 // player HAS A height
-// player HAS A
+// player HAS A age
 
 
 //TODO:

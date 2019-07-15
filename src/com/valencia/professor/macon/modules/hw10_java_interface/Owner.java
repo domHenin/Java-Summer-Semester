@@ -5,6 +5,6 @@ public interface Owner {
     double netWorth();
 }
 
-// TODO:
+//TODO:
 // owner HAS A year in role
 // owner HAS A net worth
