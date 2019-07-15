@@ -4,3 +4,7 @@ public interface Owner {
     int yearsInRole();
     double netWorth();
 }
+
+//TODO:
+// owner HAS A year in role
+// owner HAS A net worth
