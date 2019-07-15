@@ -24,6 +24,8 @@ public class Team implements Owner, Coach, Player {
     @Override
     public int salary() { return 5; }
 
+    @Override
+    public int numberOfPlayers() { return 0; }
 
 //PLAYER: Override
     @Override
@@ -42,15 +44,6 @@ public class Team implements Owner, Coach, Player {
     public int age() { return 29; }
 
 //CONSTRUCTOR:
-
-//    public Team(int numberOfTrophy, String state, String city, String name) {
-//
-//        this.state = state;
-//        this.name = name;
-//        this.city=city;
-////        this.offSeason = offSeason;
-//    }
-
     public Team(int numberOfChampionships, String state, String city, String name) {
         setNumberOfChampionships(numberOfChampionships);
         setState(state);
@@ -63,15 +56,15 @@ public class Team implements Owner, Coach, Player {
     public void setState(String state) { this.state=state; }
     public void setCity(String city) { this.city = city; }
     public void setName(String name) { this.name=name; }
-//    public void setOffSeason(boolean offSeason) { this.offSeason=offSeason; }
+
 
 //GETTERS:
     public int getNumberOfChampionships() { return numberOfChampionships; }
     public String getState() { return state; }
     public String getCity() { return city; }
     public String getName() { return name; }
-//    public boolean isOffSeason() { return offSeason; }
 
+//toString():
     public String toString() {
         return "Teams Name: "+getName()+
                 "\nTeams State: "+getState()+
@@ -80,7 +73,9 @@ public class Team implements Owner, Coach, Player {
     }
 }
 
-// team HAS A number of couch
-// team HAS A number of player
+//TODO:
+// team HAS A number of rings
+// team HAS A city
 // team HAS A state
-// team HAS A
+// team HAS A name
+

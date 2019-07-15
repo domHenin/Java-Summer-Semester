@@ -29,6 +29,7 @@ public class HwTen {
         System.out.println("Coach's Information::");
         System.out.println("Salary: $"+coach.salary()+" million USD.");
         System.out.println("Years as Coach: "+coach.yearsAsCoach()+" years.");
+        System.out.println("Number of Players: "+coach.numberOfPlayers());
     }
 
     public static void  playerInfo(Player player) {

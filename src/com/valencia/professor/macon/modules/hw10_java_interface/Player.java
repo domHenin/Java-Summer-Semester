@@ -9,8 +9,8 @@ public interface Player {
 }
 
 
-// player HAS A couch
-// player HAS A number
+// player HAS A name
+// player HAS A jersey number
 // player HAS A weight
 // player HAS A height
-// player HAS A
+// player HAS A age
