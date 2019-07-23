@@ -1,6 +1,6 @@
 package com.valencia.professor.macon.modules.hw11_first_poly_assignment;
 
-public class SoccerPlayer extends Person implements Athlete {
+public class SoccerPlayer extends Person {
 
     private String fieldPosition; //goalKeeper, defender, midFielder, forward
 
@@ -9,14 +9,6 @@ public class SoccerPlayer extends Person implements Athlete {
         super(name, age);
         setFieldPosition(fieldPosition);
     }
-
-//OVERRIDE:
-    @Override
-    public void team() { }
-
-//OVERRIDE:
-    @Override
-    public void position() { }
 
 //SETTER:
     public void setFieldPosition(String fieldPosition) { this.fieldPosition = fieldPosition; }

@@ -6,6 +6,13 @@ public class HwEleven {
 //        System.out.println("thank you for the strength i need oh' LORD.");
 
         Person person;
+        Athlete athlete = new Athlete("Steph Curry", 31, "Warriors", "Shooting guard");
+
+        System.out.println("Athlete Player Info::");
+        System.out.println("----------------------");
+        person=athlete;
+        System.out.println(person);
+        System.out.println();
 
 //BASEBALL:
         System.out.println("Baseball Player Info::");
