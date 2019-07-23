@@ -1,0 +1,61 @@
+TODO:
+ Program Specifications:
+ Design the following program:
+      A person has a name, and age.
+      An athlete is a person.
+      An athlete has a team and position.
+ ..
+      A baseball player is an athlete and a person.
+      A baseball player has a battingPosition.
+ ..
+      Baseball players either bat lefthanded, righthanded or both.
+ ..
+      A football player is an athlete and a person.
+      A football player has a specialty.
+      A football player's speciality is either Offense, Defense, or Special Teams.
+ ..
+      A hockey player is an athlete and a person.
+      A hockey player has a stickBrand.
+ ..
+      A golfer is an athlete and a person.
+      A golfer has a mainSponser.
+ ..
+      A soccer player is an athlete and a person.
+      A soccer player has a fieldPosition - goalKeeper, defender, midFielder, or forward
+ ..
+      All sport type objects have a method named doThis();
+ ..
+      BaseballPlayer -> doThis() displays I hit something.
+ ..
+      FootballPlayer -> doThis() displays I tackle something.
+ ..
+      HockeyPlayer -> doThis() displays I sit in a penalty box.
+ ..
+      Golfer -> doThis() displays I putt it in the hole.
+ ..
+      SoccerPlayer -> doThis() displays I kick the ball
+ ..
+      ... in general, all sports have a doThis() method that displays something.
+ ..
+      Main()
+      Create the classes Person, Athlete, BaseballPlayer
+      Create the classes FootballPlayer, HockeyPlayer, Golfer, SoccerPlayer
+      Create the doThis() method in each class
+ ..
+ In main create the follow reference variables:
+      BaseballPlayer Hank (create this reference variable)
+      FootballPlayer Terry (create this reference variable)
+      HockeyPlayer Mario (create this reference variable)
+      Golfer Paula (create this reference variable)
+      SoccerPlayer Danilo (create this reference variable)
+      BaseballPlayer Barry (create this reference variable)
+      FootballPlayer Peyton (create this reference variable)
+      HockeyPlayer Wayne (create this reference variable)
+      Golfer Phil (create this reference variable)
+      SoccerPlayer Carlos (create this reference variable)
+ ..
+      And then...
+ ..
+      Call each sport's doThis method (one at a time) passing each player.
+      Call the toString methods for each player object.
+      You are to turn in a UML, and CODE.
