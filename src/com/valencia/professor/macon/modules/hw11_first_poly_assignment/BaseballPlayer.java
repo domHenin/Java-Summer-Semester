@@ -1,6 +1,6 @@
 package com.valencia.professor.macon.modules.hw11_first_poly_assignment;
 
-public class BaseballPlayer extends Person implements Athlete {
+public class BaseballPlayer extends Person {
 
     private int battingPosition;
     private String battingStyle; //left, right or both hands
@@ -10,12 +10,6 @@ public class BaseballPlayer extends Person implements Athlete {
         setBattingPosition(battingPosition);
         setBattingStyle(battingStyle);
     }
-
-    @Override
-    public void team() { }
-
-    @Override
-    public void position() { }
 
     //SETTERS:
     public void setBattingPosition(int battingPosition) { this.battingPosition = battingPosition; }

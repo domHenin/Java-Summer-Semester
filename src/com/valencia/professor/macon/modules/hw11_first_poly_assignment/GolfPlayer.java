@@ -1,6 +1,6 @@
 package com.valencia.professor.macon.modules.hw11_first_poly_assignment;
 
-public class GolfPlayer extends Person implements Athlete {
+public class GolfPlayer extends Person {
 
     private String mainSponsor;
 
@@ -10,12 +10,6 @@ public class GolfPlayer extends Person implements Athlete {
         setMainSponsor(mainSponsor);
     }
 
-
-    @Override
-    public void team() { }
-
-    @Override
-    public void position() { }
 
 //SETTER:
     public void setMainSponsor(String mainSponsor) { this.mainSponsor = mainSponsor; }
