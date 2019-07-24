@@ -5,9 +5,9 @@ public class GolfPlayer extends Person implements Earnings {
     private String mainSponsor;
 
 //CONSTRUCTOR:
-    public GolfPlayer(String name, int age, String mainSponsor) {
-        super(name, age);
-        setMainSponsor(mainSponsor);
+    public GolfPlayer(String firstName, String middleInitial, String lastName, int age, String mainSponsor) {
+        super(firstName, middleInitial, lastName, age);
+        this.mainSponsor = mainSponsor;
     }
 
 //OVERRIDE: revenue()

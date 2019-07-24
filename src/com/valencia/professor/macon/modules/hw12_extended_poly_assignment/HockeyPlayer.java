@@ -5,12 +5,12 @@ public class HockeyPlayer extends Person implements Earnings {
     private String stickBrand;
 
 //CONSTRUCTOR:
-    public HockeyPlayer(String name, int age, String stickBrand) {
-        super(name, age);
-        setStickBrand(stickBrand);
+    public HockeyPlayer(String firstName, String middleInitial, String lastName, int age, String stickBrand) {
+        super(firstName, middleInitial, lastName, age);
+        this.stickBrand = stickBrand;
     }
 
-//OVERRIDE: revenue()
+    //OVERRIDE: revenue()
     @Override
     public double revenue() {
         return 5.2; //5.2billion
