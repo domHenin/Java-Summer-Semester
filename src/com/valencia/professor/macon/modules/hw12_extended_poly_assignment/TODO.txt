@@ -1,0 +1,69 @@
+Modify the First Polymorphism Assignment as shown below.
+
+
+Include an Abstract Class and an Interface (add at least one abstract method)
+Modify your code to include Polymorphic Code (variables, methods, calls)
+You are to place your code inside a MS Word Document. You are to highlight in YELLOW all polymorphic variable.
+You are to highlight in GREEN all polymorphic methods.
+You are to highlight in BLUE all polymorphic method calls.
+Remove the reference variables and replace them with an array called people which can contain up to 100 elements.
+The array people will be of type person.
+You are to load the array with the data below. Feel free to add extra people.
+Clean up the two string methods throughout the project. Make them neat and make them fit together.
+A name is comprised of the following: firstName, middleInitial, lastName.
+A person has a name, and age.
+An athlete is a person. An athlete has a team and position.
+A baseball player is an athlete and a person.
+A football player is an athlete and a person.
+A hockey player is an athlete and a person.
+A golfer is an athlete and a person.
+A soccer player is an athlete and a person.
+Baseball players have a position.
+Football players may play defense or offense or special teams. A player can play multiple positions.
+A hockey player is a skater or a goalie (not both).
+A golfer has a sponsor.
+A soccer player has a position.
+All sport type objects have a method named doThis();
+BaseballPlayer -> doThis() displays I hit something.
+FootballPlayer -> doThis() displays I tackle something.
+HockeyPlayer -> doThis() displays I sit in a penalty box.
+Golfer -> doThis() displays I putt it in the hole.
+SoccerPlayer -> doThis() displays I kick the ball.
+All sports have a doThis() method that displays something. The doThis() method must be name doThis() in all classes that have the method.
+Create the classes Person, Athlete, BaseballPlayer.
+Create the classes FootballPlayer, HockeyPlayer, GolferPlayer, SoccerPlayer.
+Create an equals methods for each Class.
+Create the doThis() method in each class.
+in main create and load the people array with the following:
+Hank H. Aaron: who is a baseball player (make up the rest...)
+Terry F. Bradshaw: a football player (make up the rest...)
+Mario Lemieux: a hockey player (make up the rest...)
+Paula X. Creamer: a golfer (make up the rest...)
+Brian T. Rowe: a soccer player (make up the rest...)
+Barry B. Bonds: a baseball player (make up the rest...)
+Payton A. Manning: a football player (make up the rest...)
+Wayne Gretzky: a hockey player (make up the rest...)
+Phil A. Mickleson: a golfer (make up the rest...)
+Dom A Dwyer: a soccer player (make up the rest...)
+add at least 6 or 12 more athletes
+
+
+
+
+Create equals methods for each class.
+By Sport, list the players that are equal to each other.
+Call each sports doThis() method (one at a time) passing each player.
+call the toString methods for each player object.
+Add a menu system that makes this all work.
+
+
+
+
+Deliverables
+
+
+In a short paragraph or two, explain the difference between Part 1 (the first Polymorphism Assignment) of your code and this Exam four changes (how you modified Part 1). You can add this in a text file or Word file that you include in the project.
+You are to turn in the updated UML with the project.
+Do not worry about Word messing up your formatting. Just highlight where necessary.
+Place the UML, paragraph, and the word document(s) in the SRC folder before you zip it up.
+Design tool not required.
