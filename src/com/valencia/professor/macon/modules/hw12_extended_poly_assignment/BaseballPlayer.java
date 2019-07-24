@@ -1,13 +1,14 @@
 package com.valencia.professor.macon.modules.hw12_extended_poly_assignment;
 
 public class BaseballPlayer extends Person implements Earnings {
-    private int battingPosition;
+    private int battingposition;
     private String battingStyle; //left, right or both hands
 
-    public BaseballPlayer(String name, int age, int battingPosition, String battingStyle) {
-        super(name, age);
-        setBattingPosition(battingPosition);
-        setBattingStyle(battingStyle);
+//CONSTRUCTOR:
+    public BaseballPlayer(String firstName, String middleInitial, String lastName, int age, int battingposition, String battingStyle) {
+        super(firstName, middleInitial, lastName, age);
+        this.battingposition = battingposition;
+        this.battingStyle = battingStyle;
     }
 
 //OVERRIDE: revenue()
@@ -23,12 +24,12 @@ public class BaseballPlayer extends Person implements Earnings {
     }
 
 //SETTERS:
-    public void setBattingPosition(int battingPosition) { this.battingPosition = battingPosition; }
+    public void setBattingposition(int battingposition) { this.battingposition = battingposition; }
     public void setBattingStyle(String battingStyle) { this.battingStyle = battingStyle; }
 
 
 //GETTERS:
-    public int getBattingPosition() { return battingPosition; }
+    public int getBattingposition() { return battingposition; }
     public String getBattingStyle() { return battingStyle; }
 
 
@@ -40,8 +41,8 @@ public class BaseballPlayer extends Person implements Earnings {
 
 //toString():
     public String toString() {
-        return ""+super.toString()+
-                "\nBatting Position: "+battingPosition+
+        return  ""+super.toString()+
+                "\nBatting position: "+battingposition+
                 "\nBatting Style: "+battingStyle;
     }
 }

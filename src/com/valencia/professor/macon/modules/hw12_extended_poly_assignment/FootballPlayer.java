@@ -5,9 +5,9 @@ public class FootballPlayer extends Person implements Earnings{
     private String specialty; //offense, defense, special team
 
 //CONSTRUCTOR:
-    public FootballPlayer(String name, int age, String specialty) {
-        super(name, age);
-        setSpecialty(specialty);    //offense, defense, special teams
+    public FootballPlayer(String firstName, String middleInitial, String lastName, int age, String specialty) {
+        super(firstName, middleInitial, lastName, age);
+        this.specialty = specialty;
     }
 
 //OVERRIDE: revenue()

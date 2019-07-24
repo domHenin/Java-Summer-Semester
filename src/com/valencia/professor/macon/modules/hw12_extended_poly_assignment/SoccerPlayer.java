@@ -2,15 +2,15 @@ package com.valencia.professor.macon.modules.hw12_extended_poly_assignment;
 
 public class SoccerPlayer extends Person implements Earnings {
 
-    private String fieldPosition; //goalKeeper, defender, midFielder, forward
+    private String fieldposition; //goalKeeper, defender, midFielder, forward
 
 //CONSTRUCTOR:
-    public SoccerPlayer(String name, int age, String fieldPosition) {
-        super(name, age);
-        setFieldPosition(fieldPosition);
+    public SoccerPlayer(String firstName, String middleInitial, String lastName, int age, String fieldposition) {
+        super(firstName, middleInitial, lastName, age);
+        this.fieldposition = fieldposition;
     }
 
-//OVERRIDE: revenue()
+    //OVERRIDE: revenue()
     @Override
     public double revenue() {
         return 1.69; //1.69billion
@@ -23,10 +23,10 @@ public class SoccerPlayer extends Person implements Earnings {
     }
 
 //SETTER:
-    public void setFieldPosition(String fieldPosition) { this.fieldPosition = fieldPosition; }
+    public void setFieldposition(String fieldposition) { this.fieldposition = fieldposition; }
 
 //GETTER:
-    public String getFieldPosition() { return fieldPosition; }
+    public String getFieldposition() { return fieldposition; }
 
 
 //doThis():
@@ -37,7 +37,7 @@ public class SoccerPlayer extends Person implements Earnings {
 //toString():
     public String toString() {
         return ""+super.toString()+
-                "\nPosition: "+fieldPosition+
+                "\nposition: "+fieldposition+
                 "\nRevenue: "+revenue();
     }
 }
