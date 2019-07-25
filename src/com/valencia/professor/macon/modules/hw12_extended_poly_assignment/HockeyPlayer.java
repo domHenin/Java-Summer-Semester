@@ -1,16 +1,20 @@
 package com.valencia.professor.macon.modules.hw12_extended_poly_assignment;
 
-public class HockeyPlayer extends Person implements Earnings {
+public class HockeyPlayer extends Person implements Information {
 
     private String stickBrand;
+    private boolean skater;
+    private boolean goalie;
 
 //CONSTRUCTOR:
-    public HockeyPlayer(String firstName, String middleInitial, String lastName, int age, String stickBrand) {
+    public HockeyPlayer(String firstName, String middleInitial, String lastName, int age, String stickBrand, boolean skater, boolean goalie) {
         super(firstName, middleInitial, lastName, age);
-        this.stickBrand = stickBrand;
+        setStickBrand(stickBrand);
+        setSkater(skater);
+        setGoalie(goalie);
     }
 
-    //OVERRIDE: revenue()
+//OVERRIDE: revenue()
     @Override
     public double revenue() {
         return 5.2; //5.2billion
@@ -24,12 +28,15 @@ public class HockeyPlayer extends Person implements Earnings {
 
 //SETTER:
     public void setStickBrand(String stickBrand) { this.stickBrand = stickBrand; }
+    public void setSkater(boolean skater) { this.skater = skater; }
+    public void setGoalie(boolean goalie) { this.goalie = goalie; }
 
-//GETTER:
+    //GETTER:
     public String getStickBrand() { return stickBrand; }
+    public boolean isSkater() { return skater; }
+    public boolean isGoalie() { return goalie; }
 
-
-//doThis():
+    //doThis():
     public String doThis() {
         return "I sit in a penalty box.";
     }

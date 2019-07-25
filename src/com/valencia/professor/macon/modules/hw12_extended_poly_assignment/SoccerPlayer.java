@@ -1,6 +1,6 @@
 package com.valencia.professor.macon.modules.hw12_extended_poly_assignment;
 
-public class SoccerPlayer extends Person implements Earnings {
+public class SoccerPlayer extends Person implements Information {
 
     private String fieldposition; //goalKeeper, defender, midFielder, forward
 
