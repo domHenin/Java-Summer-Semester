@@ -1,6 +1,6 @@
 package com.valencia.professor.macon.modules.hw12_extended_poly_assignment;
 
-public class FootballPlayer extends Person implements Earnings{
+public class FootballPlayer extends Person implements Information {
 
     private String specialty; //offense, defense, special team
 

@@ -1,17 +1,43 @@
 package com.valencia.professor.macon.modules.hw12_extended_poly_assignment;
 
+//TODO:
+// find 'position' and capitilize where needs be
+// clean code -> correct the constructors to setters
+
 public class HwTwelve {
     public static void main(String[] args) {
 //        System.out.println("i call to the LORD, who is worthy of praise");
 //        System.out.println("https://www.topendsports.com/world/lists/popular-sport/fans.htm");
 
-        String[] people = new String[100];
+        Person[] people = new Person[100]{
+            new Person("Hank", "H.", "Aaron", 85),
+                    new Person("Barry", "L.", "Bonds", 55),
+                    new Person("Jackie", "R.", "Robinson", 53),
+                    new Person("Peyton", "A.", "Manning", 43),
+                    new Person("Terry", "F.", "Bradshaw", 70),
+                    new Person("Colin", "R.", "Kaepernick", 31),
+                    new Person("Mario", "J.", "Lemieux", 53),
+                    new Person("Wayne", "D.", "Gretzky", 58),
+                    new Person("Kendall", "C.", "Schofield", 27),
+                    new Person("Phil", "A.", "Mickleson", 49),
+                    new Person("Paula", "X.", "Creamer", 32),
+                    new Person("Michelle", "S.", "Wie", 29),
+                    new Person("Dom", "A.", "Dwyer", 28),
+                    new Person("Brian", "T.", "Rowe", 30),
+                    new Person("Ronaldo", "A.", "Moreira", 39)
+        };
 
-//        people[0] = "test";
 
+//Testing EQUALS:: java 18 polymorphism 33:42
 
     }
 }
+
+
+//TODO:
+// figure out the array situation
+// complete the equals() method for each class
+// create a menu style -> last
 
 
 //CODE GRAVEYARD::
