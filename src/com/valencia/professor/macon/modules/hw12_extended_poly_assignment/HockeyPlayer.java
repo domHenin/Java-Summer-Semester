@@ -3,15 +3,15 @@ package com.valencia.professor.macon.modules.hw12_extended_poly_assignment;
 public class HockeyPlayer extends Person implements Information {
 
     private String stickBrand;
-    private boolean skater;
-    private boolean goalie;
+//    private boolean skater;
+//    private boolean goalie;
 
 //CONSTRUCTOR:
-    public HockeyPlayer(String firstName, String middleInitial, String lastName, int age, String stickBrand, boolean skater, boolean goalie) {
+    public HockeyPlayer(String firstName, String middleInitial, String lastName, int age, String stickBrand) {
         super(firstName, middleInitial, lastName, age);
         setStickBrand(stickBrand);
-        setSkater(skater);
-        setGoalie(goalie);
+//        setSkater(skater);
+//        setGoalie(goalie);
     }
 
 //OVERRIDE: revenue()
@@ -28,13 +28,13 @@ public class HockeyPlayer extends Person implements Information {
 
 //SETTER:
     public void setStickBrand(String stickBrand) { this.stickBrand = stickBrand; }
-    public void setSkater(boolean skater) { this.skater = skater; }
-    public void setGoalie(boolean goalie) { this.goalie = goalie; }
+//    public void setSkater(boolean skater) { this.skater = skater; }
+//    public void setGoalie(boolean goalie) { this.goalie = goalie; }
 
     //GETTER:
     public String getStickBrand() { return stickBrand; }
-    public boolean isSkater() { return skater; }
-    public boolean isGoalie() { return goalie; }
+//    public boolean isSkater() { return skater; }
+//    public boolean isGoalie() { return goalie; }
 
     //doThis():
     public String doThis() {
@@ -49,3 +49,5 @@ public class HockeyPlayer extends Person implements Information {
     }
 }
 
+//TODO:
+// create methods for skater and goalie to extend hockey

@@ -1,6 +1,6 @@
 package com.valencia.professor.macon.modules.hw12_extended_poly_assignment;
 
-import com.valencia.professor.macon.modules.video_tutorial.Dog;
+
 
 public class BaseballPlayer extends Person implements Information {
     private int battingPosition;
@@ -39,6 +39,7 @@ public class BaseballPlayer extends Person implements Information {
 
         return result;
     }
+    //compare name
 
 //SETTERS:
     public void setBattingPosition(int battingposition) { this.battingPosition = battingposition; }
@@ -55,11 +56,11 @@ public class BaseballPlayer extends Person implements Information {
         return "I hit something.\n";
     }
 
-
-//toString():
-    public String toString() {
-        return  ""+super.toString()+
-                "\nBatting position: "+battingposition+
-                "\nBatting Style: "+battingStyle;
-    }
+//
+////toString():
+//    public String toString() {
+//        return  ""+super.toString()+
+//                "\nBatting position: "+battingposition+
+//                "\nBatting Style: "+battingStyle;
+//    }
 }

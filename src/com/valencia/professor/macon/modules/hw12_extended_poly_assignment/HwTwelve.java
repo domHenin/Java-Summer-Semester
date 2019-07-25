@@ -4,8 +4,6 @@ package com.valencia.professor.macon.modules.hw12_extended_poly_assignment;
 // find 'position' and capitilize where needs be
 // clean code -> correct the constructors to setters
 
-import java.net.SocketException;
-
 public class HwTwelve {
     public static void main(String[] args) {
 //        System.out.println("i call to the LORD, who is worthy of praise");
