@@ -4,28 +4,70 @@ package com.valencia.professor.macon.modules.hw12_extended_poly_assignment;
 // find 'position' and capitilize where needs be
 // clean code -> correct the constructors to setters
 
+import java.net.SocketException;
+
 public class HwTwelve {
     public static void main(String[] args) {
 //        System.out.println("i call to the LORD, who is worthy of praise");
 //        System.out.println("https://www.topendsports.com/world/lists/popular-sport/fans.htm");
 
-        Person[] people = new Person[100]{
-            new Person("Hank", "H.", "Aaron", 85),
-                    new Person("Barry", "L.", "Bonds", 55),
-                    new Person("Jackie", "R.", "Robinson", 53),
-                    new Person("Peyton", "A.", "Manning", 43),
-                    new Person("Terry", "F.", "Bradshaw", 70),
-                    new Person("Colin", "R.", "Kaepernick", 31),
-                    new Person("Mario", "J.", "Lemieux", 53),
-                    new Person("Wayne", "D.", "Gretzky", 58),
-                    new Person("Kendall", "C.", "Schofield", 27),
-                    new Person("Phil", "A.", "Mickleson", 49),
-                    new Person("Paula", "X.", "Creamer", 32),
-                    new Person("Michelle", "S.", "Wie", 29),
-                    new Person("Dom", "A.", "Dwyer", 28),
-                    new Person("Brian", "T.", "Rowe", 30),
-                    new Person("Ronaldo", "A.", "Moreira", 39)
-        };
+//ARRAY:
+        Person[] people = new Person[100];
+
+//LOAD ARRAY::
+//BASEBALL:
+        BaseballPlayer hank = new BaseballPlayer("Hank", "H.", "Aaron", 85, 8, "Right");
+        people[1]=hank;
+
+        BaseballPlayer barry = new BaseballPlayer("Barry", "L.", "Bonds", 55, 4, "Left");
+        people[2]=barry;
+
+        BaseballPlayer jackie = new BaseballPlayer("Jackie", "R.", "Robinson", 53, 147, "Right");
+        people[3]=jackie;
+
+//FOOTBALL:
+        FootballPlayer peyton = new FootballPlayer("Peyton", "A.", "Manning", 43, "Offense");
+        people[4]=peyton;
+
+        FootballPlayer terry = new FootballPlayer("Terry", "F.", "Bradshaw", 43, "Offense");
+        people[5]=terry;
+
+        FootballPlayer colin = new FootballPlayer("Colin", "R.", "Kaepernick", 31, "Offense");
+        people[6]=colin;
+
+//HOCKEY:
+        HockeyPlayer mario = new HockeyPlayer("Mario", "J.", "Lemieux", 53, "Steiner Sports");
+        people[7]=mario;
+
+        HockeyPlayer wayne = new HockeyPlayer("Wayne", "D.", "Gretzky", 58, "Titan2020");
+        people[8]=wayne;
+
+        HockeyPlayer kendall = new HockeyPlayer("Kendall", "C.", "Schofield", 27, "XT901");
+        people[9]=kendall;
+
+//GOLFER:
+        GolfPlayer phil = new GolfPlayer("Phil", "A.", "Mickleson", 49, "KPMG");
+        people[10]=phil;
+
+        GolfPlayer paula = new GolfPlayer("Paule", "X.", "Creamer", 32, "CDW");
+        people[11]=paula;
+
+        GolfPlayer michelle = new GolfPlayer("Michelle", "S.", "Wie", 29, "KPMG");
+        people[12]=michelle;
+
+//SOCCER:
+        SoccerPlayer dom = new SoccerPlayer("Dom", "A.", "Dwyer", 28, "Forward");
+        people[13]=dom;
+
+        SoccerPlayer brian = new SoccerPlayer("Brian", "T.", "Rowe", 30, "Goal Keeper");
+        people[14]=brian;
+
+        SoccerPlayer ronaldo = new SoccerPlayer("Ronaldo", "A.", "Moreira", 39, "Forward");
+        people[15]=ronaldo;
+
+//TEST: for array
+//        System.out.println(people[15]);
+
 
 
 //Testing EQUALS:: java 18 polymorphism 33:42
@@ -35,9 +77,10 @@ public class HwTwelve {
 
 
 //TODO:
-// figure out the array situation
+// figure out the array situation --> COMPLETE
 // complete the equals() method for each class
 // create a menu style -> last
+//create new methods for hockey player and have them extend hockey player
 
 
 //CODE GRAVEYARD::
