@@ -18,9 +18,9 @@ A football player is an athlete and a person.
 A hockey player is an athlete and a person.
 A golfer is an athlete and a person.
 A soccer player is an athlete and a person.
-Baseball players have a position.
+Baseball players have a position. -> extend athlete
 Football players may play defense or offense or special teams. A player can play multiple positions.
-A hockey player is a skater or a goalie (not both).
+A hockey player is a skater or a goalie (not both).  -> create classes for skater and golie and extend hockey player
 A golfer has a sponsor.
 A soccer player has a position.
 All sport type objects have a method named doThis();
