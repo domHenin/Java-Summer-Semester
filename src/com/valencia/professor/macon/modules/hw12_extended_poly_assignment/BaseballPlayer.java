@@ -9,8 +9,8 @@ public class BaseballPlayer extends Person implements Information {
 //CONSTRUCTOR:
     public BaseballPlayer(String firstName, String middleInitial, String lastName, int age, int battingposition, String battingStyle) {
         super(firstName, middleInitial, lastName, age);
-        this.battingPosition = battingPosition;
-        this.battingStyle = battingStyle;
+        setBattingPosition(battingposition);
+        setBattingStyle(battingStyle);
     }
 
 //OVERRIDE: revenue()
@@ -56,11 +56,17 @@ public class BaseballPlayer extends Person implements Information {
         return "I hit something.\n";
     }
 
-//
-////toString():
-//    public String toString() {
-//        return  ""+super.toString()+
-//                "\nBatting position: "+battingposition+
-//                "\nBatting Style: "+battingStyle;
-//    }
+
+//toString():
+    public String toString() {
+        return  ""+super.toString()+
+                "\n Baseballs Information"+
+                "\n----------------------"+
+                "\nRevenue: $"+revenue()+" billion"+
+                "\nFans: "+fans()+" million"+
+                "\n"+super.getFirstName()+"'s Info"+
+                "\n-----------------------"+
+                "\nBatting position: "+battingPosition+
+                "\nBatting Style: "+battingStyle;
+    }
 }

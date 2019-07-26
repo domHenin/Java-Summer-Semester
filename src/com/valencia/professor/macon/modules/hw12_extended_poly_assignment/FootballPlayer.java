@@ -7,7 +7,7 @@ public class FootballPlayer extends Person implements Information {
 //CONSTRUCTOR:
     public FootballPlayer(String firstName, String middleInitial, String lastName, int age, String specialty) {
         super(firstName, middleInitial, lastName, age);
-        this.specialty = specialty;
+        setSpecialty(specialty);
     }
 
 //OVERRIDE: revenue()
@@ -36,6 +36,9 @@ public class FootballPlayer extends Person implements Information {
 //toString():
     public String toString() {
         return ""+super.toString()+
-                "\nSpecialty: "+specialty;
+                "\nSpecialty: "+specialty+
+                "\nRevenue: $"+revenue()+" billion"+
+                "\nFans: "+fans()+" million";
+
     }
 }

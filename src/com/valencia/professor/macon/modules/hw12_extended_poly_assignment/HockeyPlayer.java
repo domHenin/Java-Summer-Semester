@@ -45,7 +45,9 @@ public class HockeyPlayer extends Person implements Information {
 //toString():
     public String toString() {
         return ""+super.toString()+
-                "\nBrand of Stick: "+stickBrand;
+                "\nBrand of Stick: "+stickBrand+
+                "\nRevenue: $"+revenue()+" billion"+
+                "\nFans: "+fans()+" million";
     }
 }
 

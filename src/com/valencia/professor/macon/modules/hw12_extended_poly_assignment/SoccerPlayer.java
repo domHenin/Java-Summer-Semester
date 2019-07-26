@@ -7,10 +7,10 @@ public class SoccerPlayer extends Person implements Information {
 //CONSTRUCTOR:
     public SoccerPlayer(String firstName, String middleInitial, String lastName, int age, String fieldposition) {
         super(firstName, middleInitial, lastName, age);
-        this.fieldposition = fieldposition;
+        setFieldposition(fieldposition);
     }
 
-    //OVERRIDE: revenue()
+//OVERRIDE: revenue()
     @Override
     public double revenue() {
         return 1.69; //1.69billion
@@ -38,6 +38,7 @@ public class SoccerPlayer extends Person implements Information {
     public String toString() {
         return ""+super.toString()+
                 "\nposition: "+fieldposition+
-                "\nRevenue: "+revenue();
+                "\nRevenue: $"+revenue()+" billion"+
+                "\nFans: "+fans()+" billion";
     }
 }
