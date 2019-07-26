@@ -1,8 +1,6 @@
 package com.valencia.professor.macon.modules.hw12_extended_poly_assignment;
 
-//TODO:
-// find 'position' and capitilize where needs be
-// clean code -> correct the constructors to setters
+import java.util.Scanner;
 
 public class HwTwelve {
     public static void main(String[] args) {
@@ -14,70 +12,203 @@ public class HwTwelve {
 
 //LOAD ARRAY::
 //BASEBALL:
-        BaseballPlayer hank = new BaseballPlayer("Hank", "H.", "Aaron", 85, 8, "Right");
-        people[1]=hank;
+//        BaseballPlayer hank = new BaseballPlayer("Hank", "H.", "Aaron", 85, 8, "Right");
+//        people[1]=hank;
 
-        BaseballPlayer barry = new BaseballPlayer("Barry", "L.", "Bonds", 55, 4, "Left");
-        people[2]=barry;
+//        BaseballPlayer barry = new BaseballPlayer("Barry", "L.", "Bonds", 55, 4, "Left");
+//        people[2]=barry;
 
-        BaseballPlayer jackie = new BaseballPlayer("Jackie", "R.", "Robinson", 53, 147, "Right");
-        people[3]=jackie;
+//        BaseballPlayer jackie = new BaseballPlayer("Jackie", "R.", "Robinson", 53, 147, "Right");
+//        people[3]=jackie;
 
 //FOOTBALL:
-        FootballPlayer peyton = new FootballPlayer("Peyton", "A.", "Manning", 43, "Offense");
-        people[4]=peyton;
-
-        FootballPlayer terry = new FootballPlayer("Terry", "F.", "Bradshaw", 43, "Offense");
-        people[5]=terry;
-
-        FootballPlayer colin = new FootballPlayer("Colin", "R.", "Kaepernick", 31, "Offense");
-        people[6]=colin;
+//        FootballPlayer peyton = new FootballPlayer("Peyton", "A.", "Manning", 43, "Offense");
+//        people[4]=peyton;
+//
+//        FootballPlayer terry = new FootballPlayer("Terry", "F.", "Bradshaw", 43, "Offense");
+//        people[5]=terry;
+//
+//        FootballPlayer colin = new FootballPlayer("Colin", "R.", "Kaepernick", 31, "Offense");
+//        people[6]=colin;
 
 //HOCKEY:
-        HockeyPlayer mario = new HockeyPlayer("Mario", "J.", "Lemieux", 53, "Steiner Sports");
-        people[7]=mario;
-
-        HockeyPlayer wayne = new HockeyPlayer("Wayne", "D.", "Gretzky", 58, "Titan2020");
-        people[8]=wayne;
-
-        HockeyPlayer kendall = new HockeyPlayer("Kendall", "C.", "Schofield", 27, "XT901");
-        people[9]=kendall;
+//        HockeyPlayer mario = new HockeyPlayer("Mario", "J.", "Lemieux", 53, "Steiner Sports");
+//        people[7]=mario;
+//
+//        HockeyPlayer wayne = new HockeyPlayer("Wayne", "D.", "Gretzky", 58, "Titan2020");
+//        people[8]=wayne;
+//
+//        HockeyPlayer kendall = new HockeyPlayer("Kendall", "C.", "Schofield", 27, "XT901");
+//        people[9]=kendall;
 
 //GOLFER:
-        GolfPlayer phil = new GolfPlayer("Phil", "A.", "Mickleson", 49, "KPMG");
-        people[10]=phil;
-
-        GolfPlayer paula = new GolfPlayer("Paule", "X.", "Creamer", 32, "CDW");
-        people[11]=paula;
-
-        GolfPlayer michelle = new GolfPlayer("Michelle", "S.", "Wie", 29, "KPMG");
-        people[12]=michelle;
+//        GolfPlayer phil = new GolfPlayer("Phil", "A.", "Mickleson", 49, "KPMG");
+//        people[10]=phil;
+//
+//        GolfPlayer paula = new GolfPlayer("Paule", "X.", "Creamer", 32, "CDW");
+//        people[11]=paula;
+//
+//        GolfPlayer michelle = new GolfPlayer("Michelle", "S.", "Wie", 29, "KPMG");
+//        people[12]=michelle;
 
 //SOCCER:
-        SoccerPlayer dom = new SoccerPlayer("Dom", "A.", "Dwyer", 28, "Forward");
-        people[13]=dom;
-
-        SoccerPlayer brian = new SoccerPlayer("Brian", "T.", "Rowe", 30, "Goal Keeper");
-        people[14]=brian;
-
-        SoccerPlayer ronaldo = new SoccerPlayer("Ronaldo", "A.", "Moreira", 39, "Forward");
-        people[15]=ronaldo;
+//        SoccerPlayer dom = new SoccerPlayer("Dom", "A.", "Dwyer", 28, "Forward");
+//        people[13]=dom;
+//
+//        SoccerPlayer brian = new SoccerPlayer("Brian", "T.", "Rowe", 30, "Goal Keeper");
+//        people[14]=brian;
+//
+//        SoccerPlayer ronaldo = new SoccerPlayer("Ronaldo", "A.", "Moreira", 39, "Forward");
+//        people[15]=ronaldo;
 
 //TEST: for array
 //        System.out.println(people[15]);
+
+
+        char option;
+
+        do {
+            option=getChoice();
+
+            switch (option) {
+                case 'B':
+                    BaseballPlayer hank = new BaseballPlayer("Hank", "H.", "Aaron", 85, 8, "Right");
+                    System.out.println(people[1]=hank);
+                    aPerson(hank);
+
+                    BaseballPlayer barry = new BaseballPlayer("Barry", "L.", "Bonds", 55, 4, "Left");
+                    System.out.println(people[2]=barry);
+                    aPerson(barry);
+
+                    BaseballPlayer jackie = new BaseballPlayer("Jackie", "R.", "Robinson", 53, 147, "Right");
+                    System.out.println(people[3]=jackie);
+                    aPerson(jackie);
+                    break;
+
+                case 'F':
+                    FootballPlayer peyton = new FootballPlayer("Peyton", "A.", "Manning", 43, "Offense");
+                    people[4]=peyton;
+                    aPerson(peyton);
+
+                    FootballPlayer terry = new FootballPlayer("Terry", "F.", "Bradshaw", 43, "Offense");
+                    people[5]=terry;
+                    aPerson(terry);
+
+                    FootballPlayer colin = new FootballPlayer("Colin", "R.", "Kaepernick", 31, "Offense");
+                    people[6]=colin;
+                    aPerson(colin);
+                    break;
+
+                case 'H':
+                    HockeyPlayer mario = new HockeyPlayer("Mario", "J.", "Lemieux", 53, "Steiner Sports");
+                    people[7]=mario;
+                    aPerson(mario);
+
+                    HockeyPlayer wayne = new HockeyPlayer("Wayne", "D.", "Gretzky", 58, "Titan2020");
+                    people[8]=wayne;
+                    aPerson(wayne);
+
+                    HockeyPlayer kendall = new HockeyPlayer("Kendall", "C.", "Schofield", 27, "XT901");
+                    people[9]=kendall;
+                    aPerson(kendall);
+                    break;
+
+                case 'G':
+                    GolfPlayer phil = new GolfPlayer("Phil", "A.", "Mickleson", 49, "KPMG");
+                    people[10]=phil;
+                    aPerson(phil);
+
+                    GolfPlayer paula = new GolfPlayer("Paule", "X.", "Creamer", 32, "CDW");
+                    people[11]=paula;
+                    aPerson(paula);
+
+                    GolfPlayer michelle = new GolfPlayer("Michelle", "S.", "Wie", 29, "KPMG");
+                    people[12]=michelle;
+                    aPerson(michelle);
+
+                case 'S':
+                    SoccerPlayer dom = new SoccerPlayer("Dom", "A.", "Dwyer", 28, "Forward");
+                    people[13]=dom;
+                    aPerson(dom);
+
+                    SoccerPlayer brian = new SoccerPlayer("Brian", "T.", "Rowe", 30, "Goal Keeper");
+                    people[14]=brian;
+                    aPerson(brian);
+
+                    SoccerPlayer ronaldo = new SoccerPlayer("Ronaldo", "A.", "Moreira", 39, "Forward");
+                    people[15]=ronaldo;
+                    aPerson(ronaldo);
+                    break;
+
+                case 'Q':
+                    System.out.println("Exiting Program!");
+                    System.out.println("Thank you for your time.");
+                    break;
+
+                default:
+                    break;
+            }
+        } while (option != 'Q');
 
 
 
 //Testing EQUALS:: java 18 polymorphism 33:42
 
     }
+
+    public static void aPerson(Person person) {
+
+        System.out.println(person.toString());
+
+        if (person instanceof BaseballPlayer) {
+            System.out.println(((BaseballPlayer) person).doThis());
+        }
+
+        if (person instanceof FootballPlayer) {
+            System.out.println(((FootballPlayer) person).doThis());
+        }
+
+        if (person instanceof HockeyPlayer) {
+            System.out.println(((HockeyPlayer) person).doThis());
+        }
+
+        if (person instanceof GolfPlayer) {
+            System.out.println(((GolfPlayer) person).doThis());
+        }
+
+        if (person instanceof SoccerPlayer) {
+            System.out.println(((SoccerPlayer) person).doThis());
+        }
+    }
+
+
+    public static char getChoice() {
+        char result;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("#########################");
+        System.out.println("# [B]aseball Players #");
+        System.out.println("# [F]ootball Players #");
+        System.out.println("# [H]ockey Players\t #");
+        System.out.println("# [G]olf Players\t #");
+        System.out.println("# [S]occer Players\t #");
+        System.out.println("# [Q]uit Program\t #");
+        System.out.println("#########################");
+
+        System.out.println("Enter Selection: ");
+        result=scanner.nextLine().toUpperCase().charAt(0);
+
+        return result;
+    }
 }
 
 
 //TODO:
-// figure out the array situation --> COMPLETE
 // complete the equals() method for each class
-// create a menu style -> last
+// clean up toString() method. user BASEBALL as example
+// figure out the array situation --> COMPLETE
+// create a menu style -> last -> COMPLETE
 //create new methods for hockey player and have them extend hockey player
 
 

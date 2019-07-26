@@ -7,7 +7,7 @@ public class GolfPlayer extends Person implements Information {
 //CONSTRUCTOR:
     public GolfPlayer(String firstName, String middleInitial, String lastName, int age, String mainSponsor) {
         super(firstName, middleInitial, lastName, age);
-        this.mainSponsor = mainSponsor;
+        setMainSponsor(mainSponsor);
     }
 
 //OVERRIDE: revenue()
@@ -36,6 +36,8 @@ public class GolfPlayer extends Person implements Information {
 //toString():
     public String toString() {
         return ""+super.toString()+
-                "\nSponsor: "+mainSponsor;
+                "\nSponsor: "+mainSponsor+
+                "\nRevenue: $"+revenue()+" billion"+
+                "\nFans: "+fans()+" million";
     }
 }

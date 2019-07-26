@@ -8,6 +8,4 @@ public interface Information {
     //not abstract classes fix
     //needs to have class in front
     //find a class that best fits abstract class
-
-
 }
