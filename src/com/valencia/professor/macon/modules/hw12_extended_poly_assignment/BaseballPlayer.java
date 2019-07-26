@@ -64,13 +64,13 @@ public class BaseballPlayer extends Person implements Information {
 
 //toString():
     public String toString() {
-        return  ""+super.toString()+
-                "\n Baseballs Information"+
+        return  "\n Baseballs Information"+
                 "\n----------------------"+
                 "\nRevenue: $"+revenue()+" billion"+
                 "\nFans: "+fans()+" million"+
+                "\n======================="+
                 "\n"+super.getFirstName()+"'s Info"+
-                "\n-----------------------"+
+                ""+super.toString()+
                 "\nBatting position: "+battingPosition+
                 "\nBatting Style: "+battingStyle;
     }
