@@ -36,8 +36,24 @@ public class GolfPlayer extends Person implements Information {
 
 //doThis():
     public String doThis() {
-        return "I put it in the hole.";
+        return "I putt it in the hole.";
     }
+
+//EQUALS:
+    public boolean equals(Object obj) {
+        if (!(obj instanceof GolfPlayer)) {
+            return false;
+        }
+
+        boolean result = false;
+
+        if ( super.getFirstName() == ((GolfPlayer) obj).getFirstName() ) {
+            result = true;
+        }
+
+        return result;
+    }
+    //compare name
 
 //toString():
     public String toString() {

@@ -47,6 +47,22 @@ public class HockeyPlayer extends Person implements Information {
         return "I sit in a penalty box.";
     }
 
+//EQUALS:
+    public boolean equals(Object obj) {
+        if (!(obj instanceof HockeyPlayer)) {
+            return false;
+        }
+
+        boolean result = false;
+
+        if ( super.getFirstName() == ((HockeyPlayer) obj).getFirstName() ) {
+            result = true;
+        }
+
+        return result;
+    }
+    //compare name
+
 
 //toString():
     public String toString() {

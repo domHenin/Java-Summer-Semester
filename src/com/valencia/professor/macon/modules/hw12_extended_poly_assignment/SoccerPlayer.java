@@ -40,6 +40,22 @@ public class SoccerPlayer extends Person implements Information {
         return "I kick the ball.";
     }
 
+//EQUALS:
+    public boolean equals(Object obj) {
+        if (!(obj instanceof SoccerPlayer)) {
+            return false;
+        }
+
+        boolean result = false;
+
+        if ( super.getFirstName() == ((SoccerPlayer) obj).getFirstName() ) {
+            result = true;
+        }
+
+        return result;
+    }
+    //compare name
+
 //toString():
     public String toString() {
         return ""+super.toString()+

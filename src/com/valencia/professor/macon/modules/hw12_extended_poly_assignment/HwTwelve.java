@@ -80,39 +80,25 @@ public class HwTwelve {
                     break;
             }
         } while (option != 'Q');
-
-
-
-//Testing EQUALS:: java 18 polymorphism 33:42
-
     }
 
     public static void aPerson(Person person) {
 
         System.out.println(person.toString());
 
-        if (person instanceof BaseballPlayer) {
-            System.out.println(((BaseballPlayer) person).doThis());
-        }
+        if (person instanceof BaseballPlayer) { System.out.println(((BaseballPlayer) person).doThis()); }
 
-        if (person instanceof FootballPlayer) {
-            System.out.println(((FootballPlayer) person).doThis());
-        }
+        if (person instanceof FootballPlayer) { System.out.println(((FootballPlayer) person).doThis()); }
 
-        if (person instanceof HockeyPlayer) {
-            System.out.println(((HockeyPlayer) person).doThis());
-        }
+        if (person instanceof HockeyPlayer) { System.out.println(((HockeyPlayer) person).doThis()); }
 
-        if (person instanceof GolfPlayer) {
-            System.out.println(((GolfPlayer) person).doThis());
-        }
+        if (person instanceof GolfPlayer) { System.out.println(((GolfPlayer) person).doThis()); }
 
-        if (person instanceof SoccerPlayer) {
-            System.out.println(((SoccerPlayer) person).doThis());
-        }
+        if (person instanceof SoccerPlayer) { System.out.println(((SoccerPlayer) person).doThis()); }
 
+        System.out.println();
         System.out.println("The Objective of the Game: ");
-        person.objective();
+        System.out.println(person.objective()); //abstract method call in main
     }
 
 
@@ -133,7 +119,6 @@ public class HwTwelve {
 
         System.out.println("Enter Selection: ");
         result=scanner.nextLine().toUpperCase().charAt(0);
-
         return result;
     }
 }

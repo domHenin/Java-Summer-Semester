@@ -31,22 +31,6 @@ public class BaseballPlayer extends Person implements Information {
         return 500; //500million
     }
 
-//EQUALS:
-    public boolean equals(Object obj) {
-        if (!(obj instanceof BaseballPlayer)) {
-            return false;
-        }
-
-        boolean result = false;
-
-        if ( this.getBattingPosition() == ((BaseballPlayer) obj).getBattingPosition() ) {
-            result = true;
-        }
-
-        return result;
-    }
-    //compare name
-
 //SETTERS:
     public void setBattingPosition(int battingposition) { this.battingPosition = battingposition; }
     public void setBattingStyle(String battingStyle) { this.battingStyle = battingStyle; }
@@ -62,6 +46,21 @@ public class BaseballPlayer extends Person implements Information {
         return "I hit something.\n";
     }
 
+    //EQUALS:
+    public boolean equals(Object obj) {
+        if (!(obj instanceof BaseballPlayer)) {
+            return false;
+        }
+
+        boolean result = false;
+
+        if ( super.getFirstName() == ((BaseballPlayer) obj).getFirstName() ) {
+            result = true;
+        }
+
+        return result;
+    }
+    //compare name
 
 //toString():
     public String toString() {
