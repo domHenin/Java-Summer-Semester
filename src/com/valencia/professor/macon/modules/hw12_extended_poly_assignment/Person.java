@@ -1,7 +1,6 @@
 package com.valencia.professor.macon.modules.hw12_extended_poly_assignment;
 
 abstract class Person {
-    private String name;
     private String firstName;
     private String middleInitial;
     private String lastName;
@@ -15,6 +14,7 @@ abstract class Person {
         setAge(age);
     }
 
+//ABSTRACT:
     abstract String objective();
 
 //SETTERS:

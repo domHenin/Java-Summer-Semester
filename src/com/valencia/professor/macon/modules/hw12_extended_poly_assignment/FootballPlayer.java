@@ -39,12 +39,27 @@ public class FootballPlayer extends Person implements Information {
         return "I tackle something.";
     }
 
+//EQUALS:
+    public boolean equals(Object obj) {
+        if (!(obj instanceof FootballPlayer)) {
+            return false;
+        }
+
+        boolean result = false;
+
+        if ( super.getFirstName() == ((FootballPlayer) obj).getFirstName() ) {
+            result = true;
+        }
+
+        return result;
+    }
+    //compare name
+
 //toString():
     public String toString() {
         return ""+super.toString()+
                 "\nSpecialty: "+specialty+
                 "\nRevenue: $"+revenue()+" billion"+
                 "\nFans: "+fans()+" million";
-
     }
 }

@@ -6,15 +6,17 @@ public class Athlete extends Person {
     private String position;
 
 //CONSTRUCTOR:
-
-
     public Athlete(String firstName, String middleInitial, String lastName, int age, String team, String positon) {
         super(firstName, middleInitial, lastName, age);
         this.team = team;
         this.position = positon;
     }
 
-    //SETTERS:
+//OVERRIDE: objective()
+    @Override
+    String objective() { return "Train during off season."; }
+
+//SETTERS:
     public void setTeam(String team) { this.team = team; }
     public void setPositon(String positon) { this.position = positon; }
 
@@ -23,6 +25,7 @@ public class Athlete extends Person {
     public String getTeam() { return team; }
     public String getPositon() { return position; }
 
+//toString():
     public String toString() {
         return ""+super.toString()+
                 "\nTeam: "+team+
