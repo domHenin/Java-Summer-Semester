@@ -57,7 +57,13 @@ public class GolfPlayer extends Person implements Information {
 
 //toString():
     public String toString() {
-        return ""+super.toString()+
+        return "\nGolf Information"+
+                "----------------------"+
+                "\nRevenue: $"+revenue()+" billion"+
+                "\nFans: "+fans()+" million"+
+                "\n======================="+
+                "\n"+super.getFirstName()+"'s Info"+
+                ""+super.toString()+
                 "\nSponsor: "+mainSponsor+
                 "\nRevenue: $"+revenue()+" billion"+
                 "\nFans: "+fans()+" million";

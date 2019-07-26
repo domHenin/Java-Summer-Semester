@@ -58,9 +58,13 @@ public class SoccerPlayer extends Person implements Information {
 
 //toString():
     public String toString() {
-        return ""+super.toString()+
-                "\nposition: "+fieldposition+
+        return "\nSoccer Information"+
+                "\n----------------------"+
                 "\nRevenue: $"+revenue()+" billion"+
-                "\nFans: "+fans()+" billion";
+                "\nFans: "+fans()+" billion"+
+                "\n======================="+
+                "\n"+super.getFirstName()+"'s Info"+
+                ""+super.toString()+
+                "\nposition: "+fieldposition;
     }
 }
