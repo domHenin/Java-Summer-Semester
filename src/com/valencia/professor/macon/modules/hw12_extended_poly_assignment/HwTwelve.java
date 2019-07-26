@@ -110,6 +110,9 @@ public class HwTwelve {
         if (person instanceof SoccerPlayer) {
             System.out.println(((SoccerPlayer) person).doThis());
         }
+
+        System.out.println("The Objective of the Game: ");
+        person.objective();
     }
 
 
