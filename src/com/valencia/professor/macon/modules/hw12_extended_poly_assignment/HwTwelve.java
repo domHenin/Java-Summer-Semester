@@ -8,63 +8,9 @@ public class HwTwelve {
 //        System.out.println("https://www.topendsports.com/world/lists/popular-sport/fans.htm");
 
 //ARRAY:
-        Person[] people = new Person[100];
+        Person people[] = new Person[100];
 
-//LOAD ARRAY::
-//BASEBALL:
-//        BaseballPlayer hank = new BaseballPlayer("Hank", "H.", "Aaron", 85, 8, "Right");
-//        people[1]=hank;
-
-//        BaseballPlayer barry = new BaseballPlayer("Barry", "L.", "Bonds", 55, 4, "Left");
-//        people[2]=barry;
-
-//        BaseballPlayer jackie = new BaseballPlayer("Jackie", "R.", "Robinson", 53, 147, "Right");
-//        people[3]=jackie;
-
-//FOOTBALL:
-//        FootballPlayer peyton = new FootballPlayer("Peyton", "A.", "Manning", 43, "Offense");
-//        people[4]=peyton;
-//
-//        FootballPlayer terry = new FootballPlayer("Terry", "F.", "Bradshaw", 43, "Offense");
-//        people[5]=terry;
-//
-//        FootballPlayer colin = new FootballPlayer("Colin", "R.", "Kaepernick", 31, "Offense");
-//        people[6]=colin;
-
-//HOCKEY:
-//        HockeyPlayer mario = new HockeyPlayer("Mario", "J.", "Lemieux", 53, "Steiner Sports");
-//        people[7]=mario;
-//
-//        HockeyPlayer wayne = new HockeyPlayer("Wayne", "D.", "Gretzky", 58, "Titan2020");
-//        people[8]=wayne;
-//
-//        HockeyPlayer kendall = new HockeyPlayer("Kendall", "C.", "Schofield", 27, "XT901");
-//        people[9]=kendall;
-
-//GOLFER:
-//        GolfPlayer phil = new GolfPlayer("Phil", "A.", "Mickleson", 49, "KPMG");
-//        people[10]=phil;
-//
-//        GolfPlayer paula = new GolfPlayer("Paule", "X.", "Creamer", 32, "CDW");
-//        people[11]=paula;
-//
-//        GolfPlayer michelle = new GolfPlayer("Michelle", "S.", "Wie", 29, "KPMG");
-//        people[12]=michelle;
-
-//SOCCER:
-//        SoccerPlayer dom = new SoccerPlayer("Dom", "A.", "Dwyer", 28, "Forward");
-//        people[13]=dom;
-//
-//        SoccerPlayer brian = new SoccerPlayer("Brian", "T.", "Rowe", 30, "Goal Keeper");
-//        people[14]=brian;
-//
-//        SoccerPlayer ronaldo = new SoccerPlayer("Ronaldo", "A.", "Moreira", 39, "Forward");
-//        people[15]=ronaldo;
-
-//TEST: for array
-//        System.out.println(people[15]);
-
-
+//MENU BUILD:
         char option;
 
         do {
@@ -72,72 +18,57 @@ public class HwTwelve {
 
             switch (option) {
                 case 'B':
-                    BaseballPlayer hank = new BaseballPlayer("Hank", "H.", "Aaron", 85, 8, "Right");
-                    System.out.println(people[1]=hank);
-                    aPerson(hank);
+                    people[0]= new BaseballPlayer("Hank", "H.", "Aaron", 85, 8, "Right");
+                    aPerson(people[0]);
 
-                    BaseballPlayer barry = new BaseballPlayer("Barry", "L.", "Bonds", 55, 4, "Left");
-                    System.out.println(people[2]=barry);
-                    aPerson(barry);
+                    people[1]= new BaseballPlayer("Barry", "L.", "Bonds", 55, 4, "Left");
+                    aPerson(people[1]);
 
-                    BaseballPlayer jackie = new BaseballPlayer("Jackie", "R.", "Robinson", 53, 147, "Right");
-                    System.out.println(people[3]=jackie);
-                    aPerson(jackie);
+                    people[2]= new BaseballPlayer("Jackie", "R.", "Robinson", 53, 147, "Right");
+                    aPerson(people[2]);
                     break;
 
                 case 'F':
-                    FootballPlayer peyton = new FootballPlayer("Peyton", "A.", "Manning", 43, "Offense");
-                    people[4]=peyton;
-                    aPerson(peyton);
+                    people[3]= new FootballPlayer("Peyton", "A.", "Manning", 43, "Offense");
+                    aPerson(people[3]);
 
-                    FootballPlayer terry = new FootballPlayer("Terry", "F.", "Bradshaw", 43, "Offense");
-                    people[5]=terry;
-                    aPerson(terry);
+                    people[4]= new FootballPlayer("Terry", "F.", "Bradshaw", 43, "Offense");
+                    aPerson(people[4]);
 
-                    FootballPlayer colin = new FootballPlayer("Colin", "R.", "Kaepernick", 31, "Offense");
-                    people[6]=colin;
-                    aPerson(colin);
+                    people[5]= new FootballPlayer("Colin", "R.", "Kaepernick", 31, "Offense");
+                    aPerson(people[5]);
                     break;
 
                 case 'H':
-                    HockeyPlayer mario = new HockeyPlayer("Mario", "J.", "Lemieux", 53, "Steiner Sports");
-                    people[7]=mario;
-                    aPerson(mario);
+                    people[6]= new HockeyPlayer("Mario", "J.", "Lemieux", 53, "Steiner Sports");
+                    aPerson(people[6]);
 
-                    HockeyPlayer wayne = new HockeyPlayer("Wayne", "D.", "Gretzky", 58, "Titan2020");
-                    people[8]=wayne;
-                    aPerson(wayne);
+                    people[7]= new HockeyPlayer("Wayne", "D.", "Gretzky", 58, "Titan2020");
+                    aPerson(people[7]);
 
-                    HockeyPlayer kendall = new HockeyPlayer("Kendall", "C.", "Schofield", 27, "XT901");
-                    people[9]=kendall;
-                    aPerson(kendall);
+                    people[8]= new HockeyPlayer("Kendall", "C.", "Schofield", 27, "XT901");
+                    aPerson(people[8]);
                     break;
 
                 case 'G':
-                    GolfPlayer phil = new GolfPlayer("Phil", "A.", "Mickleson", 49, "KPMG");
-                    people[10]=phil;
-                    aPerson(phil);
+                    people[9]= new GolfPlayer("Phil", "A.", "Mickleson", 49, "KPMG");
+                    aPerson(people[9]);
 
-                    GolfPlayer paula = new GolfPlayer("Paule", "X.", "Creamer", 32, "CDW");
-                    people[11]=paula;
-                    aPerson(paula);
+                    people[10]= new GolfPlayer("Paula", "X.", "Creamer", 32, "CDW");
+                    aPerson(people[10]);
 
-                    GolfPlayer michelle = new GolfPlayer("Michelle", "S.", "Wie", 29, "KPMG");
-                    people[12]=michelle;
-                    aPerson(michelle);
+                    people[11]= new GolfPlayer("Michelle", "S.", "Wie", 29, "KPMG");
+                    aPerson(people[11]);
 
                 case 'S':
-                    SoccerPlayer dom = new SoccerPlayer("Dom", "A.", "Dwyer", 28, "Forward");
-                    people[13]=dom;
-                    aPerson(dom);
+                    people[12]= new SoccerPlayer("Dom", "A.", "Dwyer", 28, "Forward");
+                    aPerson(people[12]);
 
-                    SoccerPlayer brian = new SoccerPlayer("Brian", "T.", "Rowe", 30, "Goal Keeper");
-                    people[14]=brian;
-                    aPerson(brian);
+                    people[13]= new SoccerPlayer("Brian", "T.", "Rowe", 30, "Goal Keeper");
+                    aPerson(people[13]);
 
-                    SoccerPlayer ronaldo = new SoccerPlayer("Ronaldo", "A.", "Moreira", 39, "Forward");
-                    people[15]=ronaldo;
-                    aPerson(ronaldo);
+                    people[14]= new SoccerPlayer("Ronaldo", "A.", "Moreira", 39, "Forward");
+                    aPerson(people[14]);
                     break;
 
                 case 'Q':
@@ -187,6 +118,7 @@ public class HwTwelve {
 
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println();
         System.out.println("#########################");
         System.out.println("# [B]aseball Players #");
         System.out.println("# [F]ootball Players #");
