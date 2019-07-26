@@ -22,6 +22,12 @@ public class FootballPlayer extends Person implements Information {
         return 400; //400million
     }
 
+//OVERRIDE: objective()
+    @Override
+    String objective() {
+        return "Get Touchdown.";
+    }
+
 //SETTERS:
     public void setSpecialty(String specialty) { this.specialty = specialty; }
 

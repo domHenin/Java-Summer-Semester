@@ -26,17 +26,23 @@ public class HockeyPlayer extends Person implements Information {
         return 2.9; //2.9million
     }
 
+//OVERRIDE: objective()
+    @Override
+    String objective() {
+        return "Shoot puck in opponent's goal.";
+    }
+
 //SETTER:
     public void setStickBrand(String stickBrand) { this.stickBrand = stickBrand; }
 //    public void setSkater(boolean skater) { this.skater = skater; }
 //    public void setGoalie(boolean goalie) { this.goalie = goalie; }
 
-    //GETTER:
+//GETTER:
     public String getStickBrand() { return stickBrand; }
 //    public boolean isSkater() { return skater; }
 //    public boolean isGoalie() { return goalie; }
 
-    //doThis():
+//doThis():
     public String doThis() {
         return "I sit in a penalty box.";
     }

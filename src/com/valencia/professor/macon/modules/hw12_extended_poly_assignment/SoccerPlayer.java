@@ -22,6 +22,12 @@ public class SoccerPlayer extends Person implements Information {
         return 3.5; //3.5billion
     }
 
+//OVERRIDE: objective()
+    @Override
+    String objective() {
+        return "Advancing the ball down field into the opposing team's goal.";
+    }
+
 //SETTER:
     public void setFieldposition(String fieldposition) { this.fieldposition = fieldposition; }
 

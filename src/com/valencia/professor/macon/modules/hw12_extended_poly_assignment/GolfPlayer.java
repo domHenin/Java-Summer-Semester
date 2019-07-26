@@ -22,6 +22,12 @@ public class GolfPlayer extends Person implements Information {
         return 450; //450million
     }
 
+//OVERRIDE: objective()
+    @Override
+    String objective() {
+        return "Get Hole in One.";
+    }
+
 //SETTER:
     public void setMainSponsor(String mainSponsor) { this.mainSponsor = mainSponsor; }
 
