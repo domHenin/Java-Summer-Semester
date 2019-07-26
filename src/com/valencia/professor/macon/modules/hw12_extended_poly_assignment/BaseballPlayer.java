@@ -13,7 +13,12 @@ public class BaseballPlayer extends Person implements Information {
         setBattingStyle(battingStyle);
     }
 
-//OVERRIDE: revenue()
+    @Override
+    String objective() {
+        return "Get Touchdown.";
+    }
+
+    //OVERRIDE: revenue()
     @Override
     public double revenue() {
         return 10; //10billion
