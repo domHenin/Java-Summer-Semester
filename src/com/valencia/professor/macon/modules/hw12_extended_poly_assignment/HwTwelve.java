@@ -59,6 +59,7 @@ public class HwTwelve {
 
                     people[11]= new GolfPlayer("Michelle", "S.", "Wie", 29, "KPMG");
                     aPerson(people[11]);
+                    break;
 
                 case 'S':
                     people[12]= new SoccerPlayer("Dom", "A.", "Dwyer", 28, "Forward");
