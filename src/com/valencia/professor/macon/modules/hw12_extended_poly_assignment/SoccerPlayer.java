@@ -2,12 +2,12 @@ package com.valencia.professor.macon.modules.hw12_extended_poly_assignment;
 
 public class SoccerPlayer extends Person implements Information {
 
-    private String fieldposition; //goalKeeper, defender, midFielder, forward
+    private String fieldPosition; //goalKeeper, defender, midFielder, forward
 
 //CONSTRUCTOR:
-    public SoccerPlayer(String firstName, String middleInitial, String lastName, int age, String fieldposition) {
+    public SoccerPlayer(String firstName, String middleInitial, String lastName, int age, String fieldPosition) {
         super(firstName, middleInitial, lastName, age);
-        setFieldposition(fieldposition);
+        setFieldPosition(fieldPosition);
     }
 
 //OVERRIDE: revenue()
@@ -29,10 +29,10 @@ public class SoccerPlayer extends Person implements Information {
     }
 
 //SETTER:
-    public void setFieldposition(String fieldposition) { this.fieldposition = fieldposition; }
+    public void setFieldPosition(String fieldPosition) { this.fieldPosition = fieldPosition; }
 
 //GETTER:
-    public String getFieldposition() { return fieldposition; }
+    public String getFieldPosition() { return fieldPosition; }
 
 
 //doThis():
@@ -65,6 +65,6 @@ public class SoccerPlayer extends Person implements Information {
                 "\n======================="+
                 "\n"+super.getFirstName()+"'s Info"+
                 ""+super.toString()+
-                "\nposition: "+fieldposition;
+                "\nposition: "+fieldPosition;
     }
 }

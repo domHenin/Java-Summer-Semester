@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class HwTwelve {
     public static void main(String[] args) {
 //        System.out.println("i call to the LORD, who is worthy of praise");
-//        System.out.println("https://www.topendsports.com/world/lists/popular-sport/fans.htm");
 
 //ARRAY:
         Person people[] = new Person[100];
