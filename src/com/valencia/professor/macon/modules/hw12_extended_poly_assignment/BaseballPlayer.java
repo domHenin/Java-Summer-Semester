@@ -46,7 +46,7 @@ public class BaseballPlayer extends Person implements Information {
         return "I hit something.\n";
     }
 
-    //EQUALS:
+//EQUALS:
     public boolean equals(Object obj) {
         if (!(obj instanceof BaseballPlayer)) {
             return false;
